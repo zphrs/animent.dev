@@ -1,0 +1,240 @@
+.markdown {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+
+  .shiki,
+  code {
+    font-family: var(--ft-fira);
+    font-size: 1rem;
+    color: #d4d4d4;
+    border-radius: 0.5rem;
+  }
+  iframe {
+    border-radius: 0.5rem;
+    border: none;
+    background-color: white;
+  }
+  .shiki {
+    padding: 1rem;
+    overflow-x: auto;
+  }
+
+  code {
+    color: var(--primary);
+    background-color: #1e1729;
+    font-size: 1rem;
+    white-space: pre-wrap;
+    max-width: 100%;
+    overflow: auto;
+    display: inline-block;
+    padding: 0.1rem 0.25rem;
+    margin-bottom: -0.5rem;
+  }
+
+  a {
+    color: var(--color);
+    background-color: hsla(var(--hue), 100%, 45%, 0.1);
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.25rem;
+    word-wrap: anywhere;
+    width: fit-content;
+    display: inline-block;
+  }
+  a.active {
+    color: hsla(var(--hue), 100%, 95%);
+    background-color: var(--color);
+  }
+  a[href*="//"]
+  {
+    color: blue;
+    background-color: hsla(240, 100%, 45%, 0.1);
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+  kbd {
+    background-color: #222;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: #eee;
+    display: inline-block;
+    font: monospace;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    top: -1px;
+  }
+  h1 {
+    color: var(--color);
+  }
+
+  h2 {
+    padding: 0.5rem;
+    border-radius: 0rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    box-sizing: border-box;
+    text-align: center;
+    background: hsl(var(--hue), 70%, 70%);
+    border-top: 2px solid var(--color);
+    border-bottom: 2px solid var(--color);
+    font-size: 1.5em;
+  }
+  h3 {
+    top: -0.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 0.5rem;
+    padding-bottom: 0.25rem;
+    text-align: center;
+    background-color: hsl(var(--hue), 75%, 80%);
+    border: 2px solid var(--color);
+    border-radius: 0.5rem;
+  }
+  .card {
+    background-color: hsla(var(--hue), 100%, 45%, 0.1);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    flex-grow: 1;
+    max-width: 800px;
+  }
+  .cards > * {
+    margin: 0.5rem;
+  }
+  svg {
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
+  }
+  q {
+    display: block;
+    position: relative;
+    padding: 0.25rem;
+    padding-left: 1rem;
+    background-color: hsla(var(--hue), 75%, 80%);
+    color: hsl(var(--hue), 75%, 10%);
+    margin-top: 0.25rem;
+  }
+  q::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -0rem;
+    left: -0rem;
+    width: 0.25rem;
+    height: 100%;
+    background-color: hsl(var(--hue), 75%, 20%);
+  }
+  q > strong {
+    margin-left: -0.5rem;
+    text-transform: capitalize;
+  }
+  table {
+    margin: auto;
+    min-width: min(400px, 100%);
+    max-width: 80%;
+    border-spacing: 0;
+    border-spacing: 0;
+    --border-radius: 0.5rem;
+    border-radius: calc(var(--border-radius) * 1.15);
+    border: 1px solid hsl(var(--hue), 100%, 20%);
+  }
+  tbody {
+    width: 100%;
+  }
+  tr {
+    width: 100%;
+  }
+  tr > td:first-child {
+    text-align: left;
+    padding: 0.25rem;
+    background-color: hsl(var(--hue), 45%, 80%);
+    border: 1px solid hsl(var(--hue), 100%, 20%);
+  }
+  tr > th {
+    background-color: hsl(var(--hue), 100%, 20%);
+    color: white;
+    text-align: center;
+  }
+  td {
+    padding: 0.25rem;
+    border: 1px solid hsl(var(--hue), 100%, 20%);
+  }
+  /* round corners */
+  thead > tr :first-child {
+    border-top-left-radius: var(--border-radius);
+  }
+  tbody > tr:last-child :first-child {
+    border-bottom-left-radius: var(--border-radius);
+  }
+  thead > tr :last-child {
+    border-top-right-radius: var(--border-radius);
+  }
+  tbody > tr:last-child :last-child {
+    border-bottom-right-radius: var(--border-radius);
+  }
+
+  blockquote {
+    background-color: hsla(var(--hue), 100%, 45%, 0.15);
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    position: relative;
+    margin-right: -1rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.2rem;
+      height: 100%;
+      background-color: var(--color);
+    }
+
+    &::before {
+      font-family: var(--ft-rubik);
+      font-size: 1.2rem;
+      color: var(--color);
+    }
+
+    &.ask {
+      --color: var(--cl-purple);
+      --hue: var(--hue-purple);
+
+      &::before {
+        content: 'Ask';
+      }
+    }
+
+    &.tip {
+      --color: var(--cl-green);
+      --hue: var(--hue-green);
+      &::before {
+        content: 'Tip';
+      }
+    }
+
+    &.important {
+      --color: var(--cl-orange);
+      --hue: var(--hue-orange);
+      &::before {
+        content: 'Important!';
+      }
+    }
+  }
+}

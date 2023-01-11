@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="86" id="Filter" width="70" x="-20.0001" y="4">
+<feDropShadow dx="-0.000146928" dy="40" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow" stdDeviation="15"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="86" id="Filter_2" width="76" x="-26.0001" y="4">
+<feDropShadow dx="-0.000146928" dy="40" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow" stdDeviation="15"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="86" id="Filter_3" width="70" x="-26.0001" y="4">
+<feDropShadow dx="-0.000146928" dy="40" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow" stdDeviation="15"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="86" id="Filter_4" width="76" x="-26.0001" y="4">
+<feDropShadow dx="-0.000146928" dy="40" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow" stdDeviation="15"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="80" id="Filter_5" width="76" x="-26.0001" y="10">
+<feDropShadow dx="-0.000146928" dy="40" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow" stdDeviation="15"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="74" id="Filter_6" width="80" x="-28.0001" y="10">
+<feDropShadow dx="-0.000146928" dy="40" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow" stdDeviation="15"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="80" id="Filter_7" width="76" x="-26.0001" y="4">
+<feDropShadow dx="-0.000146928" dy="40" flood-color="#000000" flood-opacity="0.333" in="SourceGraphic" result="Shadow" stdDeviation="15"/>
+</filter>
+</defs>
+<clipPath id="ArtboardFrame">
+<rect height="24" width="24" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer-1">
+<path d="M18 18L12 12L18 6" id="left" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M18 18L12 12L6 6" id="left-middle" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<!-- <path d="M6 6L12 12L6 18" fill="none" filter="url(#Filter_3)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M6 6L12 12L18 18" fill="none" filter="url(#Filter_4)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M6 18L12 12L18 18" fill="none" filter="url(#Filter_5)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M4 12L12 12L20 12" fill="none" filter="url(#Filter_6)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<path d="M6 6L12 12L18 6" fill="none" filter="url(#Filter_7)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/> -->
+</g>
+</svg>
