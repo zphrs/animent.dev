@@ -47,7 +47,10 @@ const config = {
   ],
 
   kit: {
-    adapter: adapter()
+    adapter: adapter(),
+    prerender: {
+      handleMissingId: 'warn'
+    }
   },
   extensions: ['.svelte', '.md']
 }
