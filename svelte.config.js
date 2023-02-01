@@ -54,7 +54,11 @@ const config = {
       handleMissingId: 'warn'
     }
   },
-  extensions: ['.svelte', '.md']
+  extensions: ['.svelte', '.md'],
+  paths: {
+    base: '/animent.dev',
+    assets: '/animent.dev'
+  }
 }
 
 export default config

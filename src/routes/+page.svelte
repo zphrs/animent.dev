@@ -34,21 +34,21 @@
         development in three stages
       </h2>
     </div>
-    <a href="/animate" class="card" data-color="green">
+    <a href="./animate" class="card" data-color="green">
       <h3>Level 1: Animate</h3>
       <p>
         Hand code SVG images, and then animate those images to create
         stunning animations.
       </p>
     </a>
-    <a href="/experiment" class="card" data-color="orange">
+    <a href="./experiment" class="card" data-color="orange">
       <h3>Level 2: Experiment</h3>
       <p>
         Use JavaScript with HTML and CSS to create an engaging and
         interactive experiment: a game, a microapp, or a web toy.
       </p>
     </a>
-    <a href="/develop" class="develop card" data-color="purple">
+    <a href="./develop" class="develop card" data-color="purple">
       <h3>Level 3: Develop</h3>
       <p>
         Develop complete applications with the React framework,
