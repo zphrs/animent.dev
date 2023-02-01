@@ -52,13 +52,13 @@ const config = {
     }),
     prerender: {
       handleMissingId: 'warn'
+    },
+    paths: {
+      base: '/animent.dev'
+      // assets: 'https://zphyrj.github.io/animent.dev'
     }
   },
-  extensions: ['.svelte', '.md'],
-  paths: {
-    base: '/animent.dev',
-    assets: '/animent.dev'
-  }
+  extensions: ['.svelte', '.md']
 }
 
 export default config

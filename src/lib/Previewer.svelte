@@ -5,6 +5,7 @@
   import CodeMirror from './CodeMirror.svelte'
   import Files from './Previewer/Files.svelte'
   import type { Tab, FileTab } from './Previewer/tab'
+  import { base } from '$app/paths'
   export let paths: string[] = []
   export let root: string
   let codeMirrorFocused = false
@@ -83,7 +84,9 @@
       const commonPathLength = commonPath.length
       const relativePath = path.slice(commonPathLength)
       const lang = path.slice(path.lastIndexOf('.') + 1)
-      const fileContent = await fetch(path).then((res) => res.text())
+      const fileContent = await fetch(`${base}${path}`).then((res) =>
+        res.text()
+      )
       return {
         path,
         relativePath,
@@ -227,8 +230,7 @@
           const newScriptTag = doc.createElement('script')
           newScriptTag.innerHTML = fileContent
           scriptTag.replaceWith(newScriptTag)
-        }
-        else {
+        } else {
           scriptTag.src = resolvedSrc.href
         }
       }

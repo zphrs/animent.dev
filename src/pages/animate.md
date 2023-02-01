@@ -104,7 +104,7 @@ In the following example, `<p>` is the opening tag, and `</p>` is the closing ta
 > <details>
 >   <summary>Answer</summary>
 >
-> Closing tags have a forward slash (`/`) right after the opening angle bracket: `</`
+> Closing tags have a forward slash - `/` - right after the opening angle bracket: `</`
 >
 > </details>
 
@@ -159,7 +159,7 @@ There are a few different selectors when it comes to css:
 
 You can either put css inline with a `<style>` HTML element, put CSS for a single element in the `style=` HTML attribute, or put CSS in a separate file with the `.css` file extension.
 
-There are even more selectors than the ones above, some of which we will cover in <a href="/develop" data-color='purple' class='accent-color'>Level 3</a>!
+There are even more selectors than the ones above, some of which we will cover in <a href="../develop" rel="external" data-color='purple' class='accent-color'>Level 3</a>!
 
 > tip
 >
@@ -243,7 +243,7 @@ Make a logo using basic shapes, css, and text.
 > </svg>
 > ```
 >
-> Otherwise the browser will show something like this: ![Text which reads, This XML file does not appear to have any style information associated with it. The document tree is shown below.](animate/d2/forgot-xmlns.png)
+> Otherwise the browser will show something like this: ![Text which reads, This XML file does not appear to have any style information associated with it. The document tree is shown below.](./animate/d2/forgot-xmlns.png)
 
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 <circle cx="50" cy="50" r="50"></circle>
@@ -294,7 +294,7 @@ You can also use CSS transforms to rotate the text and more!
 
 ```
 
-![Graphic design is my passion](animate/d2/a1/logo.svg)
+![Graphic design is my passion](./animate/d2/a1/logo.svg)
 
 <Previewer root="/animate/d2/a1/logo.svg" paths={["/animate/d2/a1/logo.svg"]} ></Previewer>
 
@@ -311,8 +311,6 @@ I just added an image with the `<img>` tag, moved the CSS to a new file, and add
 > Make sure your image is in the same folder as your HTML file for the image to show up! If you instead want to make an images folder and put your images in there, make sure to set the src to start with `/images/` like `/images/car.jpeg`
 
 <Previewer root="/animate/d2/l1/index.html" paths={["/animate/d2/l1/index.html", "/animate/d2/l1/style.css", "/animate/d2/l1/car.jpeg"]} ></Previewer>
-
-<!-- @[code](animate/d2/l1/car.jpeg) -->
 
 ### Activity 2: Add your logo to a website! (15 mins)
 
@@ -405,7 +403,7 @@ Start with this template:
 </svg>
 ```
 
-![bouncing svg](animate/d4/a1/bounce.svg)
+![bouncing svg](./animate/d4/a1/bounce.svg)
 <Previewer root="/animate/d4/a1/bounce.svg" paths={["/animate/d4/a1/bounce.svg"]} ></Previewer>
 
 ### Activity 2: Animate Multiple Shapes (10 mins)

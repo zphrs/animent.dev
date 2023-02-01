@@ -1,13 +1,14 @@
 <script>
   import './global.css'
+  import { base } from '$app/paths'
 </script>
 
 <main class="card header">
   <h1>Whoops, something went wrong.</h1>
 
   <p data-color="red">
-    Try going back <a class=".accent-color" href="/">home</a> or use the
-    links above to find what you are looking for.
+    Try going back <a class=".accent-color" href={`${base}/`}>home</a>
+    or use the links above to find what you are looking for.
   </p>
 </main>
 

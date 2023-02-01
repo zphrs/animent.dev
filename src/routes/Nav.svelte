@@ -4,6 +4,7 @@
   import { browser } from '$app/environment'
   import { onMount } from 'svelte'
   import { mobile as isMobile } from '../stores'
+  import { base } from '$app/paths'
   let nav: HTMLElement
   // listen for scroll if browser
   let transformY = 0
@@ -56,7 +57,7 @@
   style={`transform: translateY(${transformY}px)`}>
   {#each paths as [label, path, color]}
     <a
-      href={path !== $page.url.pathname ? path : '/'}
+      href={path !== $page.url.pathname ? path : `${base}/`}
       class="chip"
       data-color={color}
       class:active={path === $page.url.pathname}>{label}</a>
