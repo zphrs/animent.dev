@@ -14,9 +14,7 @@
   let mostRecentScrolledTo: Set<HTMLLIElement> | null = null
   let scrollEndPromise: Promise<void> | null = null
 
-  function getRangeOfOffsetHeights(
-    elements: Array<HTMLLIElement>
-  ) {
+  function getRangeOfOffsetHeights(elements: Array<HTMLLIElement>) {
     let min = Infinity
     let max = min * -1
     let maxElement = elements[0] // just to assure ts that it is never null
@@ -66,10 +64,7 @@
         left: 0,
         top:
           (max + min) / 2 -
-          Math.max(
-            maxElement.offsetHeight,
-            minElement.offsetHeight
-          ) -
+          Math.max(maxElement.offsetHeight, minElement.offsetHeight) -
           ul.offsetHeight / 2,
         behavior: 'smooth'
       })
@@ -78,8 +73,7 @@
 
     ul.scrollTo({
       left: 0,
-      top:
-        max - maxElement.offsetHeight - ul.offsetHeight / 2,
+      top: max - maxElement.offsetHeight - ul.offsetHeight / 2,
       behavior: 'smooth'
     })
   }
@@ -104,8 +98,7 @@
   function nextDivId(heading: Heading) {
     let currLevel = heading.level
     while (currLevel > 1) {
-      if (nextDivMap.has(heading))
-        return nextDivMap.get(heading)
+      if (nextDivMap.has(heading)) return nextDivMap.get(heading)
       const headingIndex = otherHeadings.findIndex(
         (el) => el == heading
       )

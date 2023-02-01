@@ -1,8 +1,3 @@
-<script context="module">
-  import Pre from './Pre.svelte'
-  export { Pre as pre }
-</script>
-
 <script>
   import { fly } from 'svelte/transition'
   import { expoOut } from 'svelte/easing'
@@ -23,9 +18,7 @@
     previousPageIndex.set(titleIndex)
   })
   const direction =
-    previousIndex === -1
-      ? 0
-      : Math.sign(titleIndex - previousIndex)
+    previousIndex === -1 ? 0 : Math.sign(titleIndex - previousIndex)
 </script>
 
 <svelte:head>

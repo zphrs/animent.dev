@@ -15,13 +15,13 @@ We will set up our environments, go over what html and css are used
 for, learn the structure of an XML language, and create our first
 two sites.
 
-| Lesson/Activity          | Time    |
-| ------------------------ | ------- |
-| Lesson 1: HTML vs CSS    | 15 mins |
-| Activity 1: Setup        | 15 mins |
-| Activity 2: Hello World! | 10 mins |
-| Activity 3: Poetry       | 15 mins |
-| Wrap Up                  | 5 mins  |
+| Lesson/Activity               | Time    |
+| ----------------------------- | ------- |
+| Lesson 1: HTML vs CSS         | 20 mins |
+| Activity 1: Setup             | 20 mins |
+| Activity 2: Hello World!      | 10 mins |
+| Activity 3: Poetry (optional) | 15 mins |
+| Wrap Up                       | 5 mins  |
 
 ### Lesson 1: HTML vs CSS (15 mins)
 
@@ -222,7 +222,14 @@ We are going to make two poems: first we have "Echo," a series of <code>h</code>
 
 ## Day 2
 
-### Activity 1: Make a Logo!
+| Lesson/Activity                                    | Time    |
+| -------------------------------------------------- | ------- |
+| Activity 1: Make a Logo!                           | 30 mins |
+| Lesson 1: Adding a Meme!                           | 10 mins |
+| Activity 2: Add your logo to a website! (Optional) | 15 mins |
+| Wrap Up                                            | 5 mins  |
+
+### Activity 1: Make a Logo! (30 mins)
 
 Make a logo using basic shapes, css, and text.
 
@@ -291,7 +298,7 @@ You can also use CSS transforms to rotate the text and more!
 
 <Previewer root="/animate/d2/a1/logo.svg" paths={["/animate/d2/a1/logo.svg"]} ></Previewer>
 
-### Lesson 1: Adding a Meme!
+### Lesson 1: Adding a Meme! (10 mins)
 
 I just added an image with the `<img>` tag, moved the CSS to a new file, and added some CSS for the image.
 
@@ -307,7 +314,7 @@ I just added an image with the `<img>` tag, moved the CSS to a new file, and add
 
 <!-- @[code](animate/d2/l1/car.jpeg) -->
 
-### Activity 2: Add your logo to a website!
+### Activity 2: Add your logo to a website! (15 mins)
 
 Add an index.html file in whatever directory you have your svg file and use an `<img />` tag to put that image on the html page.
 
@@ -315,7 +322,14 @@ Add an index.html file in whatever directory you have your svg file and use an `
 
 ## Day 3
 
-### Activity 1: Multiple Pages!
+| Lesson/Activity                                 | Time    |
+| ----------------------------------------------- | ------- |
+| Activity 1: Multiple Pages!                     | 15 mins |
+| Activity 2: CSS Animations + External CSS       | 30 mins |
+| Activity 3: Experiment More with CSS (optional) | 10 mins |
+| Wrap up                                         | 5 mins  |
+
+### Activity 1: Multiple Pages! (15 mins)
 
 Make a multi-page website! Complete with `<a>` links to go in between the two pages. See line 21 in `index.html` and line 22 in `second.html` for an example of how to use the `<a>` tag.
 
@@ -325,7 +339,7 @@ Make a multi-page website! Complete with `<a>` links to go in between the two pa
 
 <Previewer root="/animate/d3/a1/index.html" paths={["/animate/d3/a1/index.html", "/animate/d3/a1/second.html"]} ></Previewer>
 
-### Activity 2: CSS Animations + External CSS
+### Activity 2: CSS Animations + External CSS (30 mins)
 
 Create a simple spooky CSS animation. In `style.css` we animage the `opacity` css property
 
@@ -333,9 +347,26 @@ Create a simple spooky CSS animation. In `style.css` we animage the `opacity` cs
 
 <Previewer root="/animate/d3/a2/index.html" paths={["/animate/d3/a2/index.html", "/animate/d3/a2/style.css"]} ></Previewer>
 
+### Activity 3: Experiment More with CSS (15 mins)
+
+Look at websites around the web and when you find a design you like, inspect that website's CSS code. (right click + Inspect)
+
+Try to implement that design on your own in a new Replit!
+
+> tip
+>
+> Don't be afraid to ask questions of your instructors, especially in this activity. Obviously the entire internet will have CSS that we have not covered in this class so it makes sense that you'd have questions!
+
 ## Day 4
 
-### Activity 1: Animate an SVG
+| Lesson/Activity                                | Time    |
+| ---------------------------------------------- | ------- |
+| Activity 1: Animate an SVG                     | 20 mins |
+| Activity 2: Animate Multiple Shapes (optional) | 10 mins |
+| Activity 3: Create Your Own Animation          | 15 mins |
+| Wrap up                                        | 5 mins  |
+
+### Activity 1: Animate an SVG (20 mins)
 
 Start with this template:
 
@@ -377,11 +408,11 @@ Start with this template:
 ![bouncing svg](animate/d4/a1/bounce.svg)
 <Previewer root="/animate/d4/a1/bounce.svg" paths={["/animate/d4/a1/bounce.svg"]} ></Previewer>
 
-### Activity 2: Animate Multiple Shapes Using Transform CSS Property
+### Activity 2: Animate Multiple Shapes (10 mins)
 
 <Previewer root="/animate/d4/a2/circling-circles.svg"/>
 
-### Activity 3: Create Your Own Animation
+### Activity 3: Create Your Own Animation (15 mins)
 
 Create your very own animation!
 
@@ -391,13 +422,19 @@ Of course you can also use the two shapes we already learned, `rect` and `circle
 
 ## Day 5:
 
-### Activity 1: Make two more of your own animations (30 mins)
+| Lesson/Activity                      | Time    |
+| ------------------------------------ | ------- |
+| Activity 1: Make Two More Animations | 30 mins |
+| Activity 2: Make a Homepage          | 15 mins |
+| Activity 3: Present (15 mins)        | 15 mins |
+
+### Activity 1: Make Two More Animations (30 mins)
 
 <Previewer root="/animate/d5/a1/ex1.svg"></Previewer>
 
 <Previewer root="/animate/d5/a1/ex2.svg"></Previewer>
 
-### Activity 2: Make a homepage - code along (15 mins)
+### Activity 2: Make a Homepage (15 mins)
 
 <Previewer root="/animate/d5/a2/index.html" paths={["/animate/d5/a2/style.css"]}></Previewer>
 

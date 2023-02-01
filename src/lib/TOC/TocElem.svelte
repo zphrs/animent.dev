@@ -1,9 +1,5 @@
 <script lang="ts">
-  import {
-    onDestroy,
-    onMount,
-    createEventDispatcher
-  } from 'svelte'
+  import { onDestroy, onMount, createEventDispatcher } from 'svelte'
   import { browser } from '$app/environment'
   import { HtmlTag } from 'svelte/internal'
   import scrollEnd from './scrollEnd'
@@ -50,11 +46,11 @@
     event.preventDefault()
     const start = window.scrollY
     history.pushState('', '', `#${id}`)
+    // wait for the scroll to finish
     div.scrollIntoView({
-      behavior: 'smooth',
+      behavior: 'auto',
       block: 'start'
     })
-    // wait for the scroll to finish
     await scrollEnd()
     if (start < window.scrollY) {
       event.target && (event.target as HTMLElement).blur()

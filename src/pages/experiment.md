@@ -11,7 +11,7 @@ color: orange
 
 > warn Warning!
 >
-> This section is not complete yet. Most of the todo tasks can be relatively-easily filled in.
+> This section is not complete yet. It will likely be completed around the end of February.
 
 ## Day 1: Review + intro to JS
 
@@ -87,7 +87,7 @@ Make a player controller for a P5.js rectangle with a player class that lets the
 
 Make a cactus class that draws a cactus and moves to the left. Have 2-3 cacti that move at different speeds.
 
-#### Gameloop
+#### Game Loop
 
 ##### Points
 

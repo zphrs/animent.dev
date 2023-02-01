@@ -5,65 +5,77 @@ color: purple
 
 # Develop
 
-## Day 1: Review/Intro to React
+> warn Warning!
+>
+> This section is only an outline so far. It will likely get filled out more by the end of February and completed by the end of March.
 
-### Lesson 1: What a website should be
+## Day 1: Review JavaScript/Intro to Svelte
 
-https://mvhacks.io/web-dev-workshop/index.html
+### Activity 1: Todo App (Code along)
 
-### Activity 1: Posts
+Make a text feed that a user can post to and delete from with pure javascript
 
-Code along to recreate this:
-https://posts.zphyrj.repl.co/
+Example: (https://posts.zphyrj.repl.co)https://posts.zphyrj.repl.cox]
 
-### Activity 2: React Hello World
+### Lesson 1: Svelte Hello World
 
-TODO: Cover components and props
+TODO: Cover components, props, and file structure
 
-## Day 2: React state and refs
+## Day 2: Svelte
 
-### Activity 1: Recreate day 1's activity using React
+### Lesson 1: Setup
 
-Make sure to cover State and Refs
+Cover how to make a project in an IDE (either replit or VS Code)
 
-Code along to recreate this: https://postsReact.zephyrjones.repl.co
+### Activity 1: Recreate day 1's activity using Svelte
+
+TODO: example code
 
 ## Day 3: NodeJS
 
 ### Activity 1: NodeJS + Replit DB Post Server
 
-TODO: Make a basic NodeJS posts POST/GET interface with replit's database to create a posts page. Take in name and comment from user, return json of all posts.
+TODO: Make a basic NodeJS posts POST/GET interface with replit's database to create a server to store comments. Take in a name and a comment from user, return json of all posts.
 
 Example of using replit db + NodeJS:
 https://replit.com/@EricPedley1/form-submit-to-db-example#index.js
 
-TODO: Make a version of the above that is specifically for storing comments.
+TODO: Make a version of the above that is specifically for storing comments to a website blog.
 
 ### Activity 2: React + Fetch
 
-TODO: Interface with NodeJS backend using React app.
+TODO: Interface with NodeJS backend using a new Svelte app (students can copy and paste from old project).
 
 ## Day 4: Brainstorm App (collaborative)
 
 ### Activity 1: Brainstorm App (10 mins)
 
-List out ideas in README.md in a new React js project
+Make a new Svelte project and list out ideas in README.md
+
 > important
-> 
+>
 > Make sure to limit the scope of the project to something that can be done in one hour!
 
 TODO: List out example project ideas + demos
 
 ### Activity 2: Design Frontend (25 mins)
 
-Use the fileName.draw feature on Replit to design each page of the app in a new React project.
+Use the fileName.draw feature on Replit to design the website within the project created for Activity 1.
+
+TODO: make example
 
 ### Activity 3: Design backend (25 mins)
 
-Use a README.md in a new Node.JS project to design the API
+Make a new node.js project
+
+Use a README.md to design the API for the server
+
+TODO: make example
 
 ## Day 5: Program App
 
 ### Activity 1: Program App (60 mins)
 
 Use the designs from yesterday and actually code them up.
+
+TODO: make example
