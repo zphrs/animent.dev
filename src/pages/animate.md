@@ -55,8 +55,9 @@ tag (`</tagName>`). Elements can contain other elements and text:
 >
 > <details>
 >   <summary>Answer</summary>
-> 
+>
 > The browser automatically removes all of the extra whitespace (spaces, tabs, and newlines) between elements and text. This is so that you can format your code nicely without having to worry about the format of your code showing up on the actual website. Later we'll go over how to have multiple lines render in the browser!
+>
 > </details>
 
 Elements can have attributes as well:
@@ -299,8 +300,8 @@ I just added an image with the `<img>` tag, moved the CSS to a new file, and add
 ```
 
 > tip
-> 
-> Make sure your image is in the same folder as your HTML file for the image to show up! If you instead want to make an images folder and put your images in there, make sure to set the src to start with `/images/` like `/images/car.jpeg` 
+>
+> Make sure your image is in the same folder as your HTML file for the image to show up! If you instead want to make an images folder and put your images in there, make sure to set the src to start with `/images/` like `/images/car.jpeg`
 
 <Previewer root="/animate/d2/l1/index.html" paths={["/animate/d2/l1/index.html", "/animate/d2/l1/style.css", "/animate/d2/l1/car.jpeg"]} ></Previewer>
 
@@ -341,14 +342,16 @@ Start with this template:
 <Previewer root="/animate/d4/a1/rect-template.svg" />
 
 > tip
-> 
+>
 > Try changing the `x`, `y`, `width`, and `height` HTML attributes to see how they change the rectangle! See if you can center the rectangle in the 100 by 100 viewbox.
+>
 > <details> 
-> <summary>Answer</summary> 
-> 
+> <summary>Answer</summary>
+>
 > Set `x` and `y` to be 25.
+>
 > </details>
-Then add an animation to it:
+> Then add an animation to it:
 
 ```html
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -388,13 +391,15 @@ Of course you can also use the two shapes we already learned, `rect` and `circle
 
 ## Day 5:
 
-### Activity 1: Make 2 more of your own animations (30 mins)
+### Activity 1: Make two more of your own animations (30 mins)
 
-TODO: Code up examples
+<Previewer root="/animate/d5/a1/ex1.svg"></Previewer>
+
+<Previewer root="/animate/d5/a1/ex2.svg"></Previewer>
 
 ### Activity 2: Make a homepage - code along (15 mins)
 
-TODO: Make an index.html file demo
+<Previewer root="/animate/d5/a2/index.html" paths={["/animate/d5/a2/style.css"]}></Previewer>
 
 ### Activity 3: Present (15 mins)
 

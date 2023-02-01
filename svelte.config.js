@@ -35,10 +35,7 @@ const config = {
         }
       },
       rehypePlugins: [
-        [
-          rehypeExternalLinks,
-          { target: '_blank', rel: 'noreferrer' }
-        ]
+        [rehypeExternalLinks, { target: '_blank', rel: 'noreferrer' }]
       ],
       remarkPlugins: [
         getHeadings,

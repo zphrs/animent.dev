@@ -1,18 +1,18 @@
-# create-svelte
+# Animent.dev - Learn web development in three stages
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Made using [sveltekit](https://kit.svelte.dev)
 
-## Creating a project
+## Editing Curriculum
 
-If you're seeing this, you've probably already done this step. Congrats!
+The content for each level exists in two places: [/src/pages](./src/pages/) and [/static](./static/)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Layout
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+The `pages` directory has the markdown files which is all the text, tables, and layout of each section: [animate](./src/pages/animate.md), [experiment](./src/pages/experiment.md), and [develop](./src/pages/develop.md).
+
+### Code Examples
+
+The `static` directory has the example code files which is organized by level first (animate, experiment, develop), then by day, and lastly by activity/lesson. Activity folders are marked by an `a` followed by a number while lesson folders are marked by an `l` followed by a number. Since not all activities/lessons have examples, some activities/lessons don't have folders in the `static` directory.
 
 ## Developing
 

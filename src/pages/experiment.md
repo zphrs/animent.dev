@@ -29,16 +29,17 @@ console.log('Hello World')
 
 Start by drawing 1 rectangle to the js canvas.
 
-<Previewer root="/l2/d1/a2/rect.html" paths={["/l2/d1/a2/square.js"]} />
+<Previewer root="/experiment/d1/a2/rect.html" paths={["/experiment/d1/a2/square.js"]} />
 
 Then draw 10 rectangles onto the canvas using a for loop.
 
 If you're feeling inspired, play around and see what you can make!
+
 > tip
-> 
+>
 > Try editing the `count` variable in the `squares.js` file!
 
-<Previewer root="/l2/d1/a2/fancy.html" paths={["/l2/d1/a2/squares.js"]} />
+<Previewer root="/experiment/d1/a2/fancy.html" paths={["/experiment/d1/a2/squares.js"]} />
 
 ### Lesson 3: Demo P5.js for Tomorrow (15 mins)
 
@@ -56,11 +57,9 @@ TODO: Make demo project using the `draw()` function
 
 ### Activity 3: P5.js interactivity (30 mins)
 
-<Previewer root="/l2/d2/a3/parallax.html" paths={["/l2/d2/a3/parallax.js"]} />
-
 Introduce keyboard and mouse variables to the p5.js code.
 
-TODO: Make demo project
+<Previewer root="/experiment/d2/a3/parallax.html" paths={["/experiment/d2/a3/parallax.js"]} />
 
 ## Day 3: Classes and Object Orientation
 

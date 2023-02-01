@@ -65,7 +65,8 @@
       example code and see a preview of the page with your edits, but
       any edits you make will disappear once you refresh the page. If
       you want to save your changes I recommend copying and pasting
-      your edits into replit.com or a different text editor of choice.
+      your edits into <a href="https://replit.com">replit.com</a> or a
+      different text editor of choice.
     </p>
   </div>
 </div>
@@ -79,6 +80,14 @@
     display: grid;
     grid-template-rows: minmax(80vh, auto) 1fr 1fr 1fr;
     gap: 0.5rem;
+  }
+
+  a[href*="//"]
+  {
+    color: blue;
+    background-color: hsla(240, 100%, 45%, 0.1);
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.25rem;
   }
 
   h1 {

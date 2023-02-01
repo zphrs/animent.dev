@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight - 4)
+  createCanvas(windowWidth, windowHeight)
   const count = 10000
   const area = windowWidth * windowHeight
   const averageSquareLength = sqrt(area / count) * 2
