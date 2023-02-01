@@ -1,0 +1,1 @@
+import{r as t,w as o}from"./index-dbab65af.js";const i=600,d=o(-1),w=t(!1,function(n){{let e=function(){n(window.innerWidth<=i)};return e(),window.addEventListener("resize",e),function(){window.removeEventListener("resize",e)}}});export{w as m,d as p};

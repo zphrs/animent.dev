@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" />
+    <!-- content="child-src 'self' data:; default-src 'self'; font-src 'self' fonts.gstatic.com; img-src 'self'; script-src 'unsafe-inline' 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com"  -->
+    <link
+      rel="icon"
+      href="./favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Fira+Code:wght@500&family=Rubik:wght@500&display=swap"
+      rel="stylesheet" />
+    <style>
+      /* reset from https://www.joshwcomeau.com/css/custom-css-reset/*/
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      /*
+  2. Remove default margin
+*/
+      * {
+        margin: 0;
+      }
+
+      /*
+  3. Allow percentage-based heights in the application
+*/
+      html {
+        height: 100%;
+      }
+
+      body {
+        min-height: 100%;
+      }
+
+      /*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /*
+  6. Improve media defaults
+*/
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      /*
+  7. Remove built-in form typography styles
+*/
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      /*
+  8. Avoid text overflows
+*/
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+
+      /*
+  9. Create a root stacking context
+*/
+      #root,
+      #__next {
+        isolation: isolate;
+      }
+    </style>
+    <meta http-equiv="content-security-policy" content="">
+		<link href="./_app/immutable/assets/_layout-c6312d17.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/global-43b2bbac.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page-8376f375.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Previewer-e1cc13f6.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-9d5ded20.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-307a31c0.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-d3c152c2.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-dbab65af.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-5c89cd7f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/navPaths-f350f2ce.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores-35f8706f.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_slug_/_page.svelte-a0514097.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-5f52dae4.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/_slug_/_page.ts-2d9967eb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_page-2db11f65.js"><title>Animate</title><!-- HEAD_svelte-1258swp_START --><!-- HEAD_svelte-1258swp_END -->
+  </head>
+
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+
+
+<nav data-color="green" style="transform: translateY(0px)" class="svelte-1k8vqwh"><a href="/" class="chip svelte-1k8vqwh active" data-color="green">Animate</a><a href="/experiment" class="chip svelte-1k8vqwh" data-color="orange">Experiment</a><a href="/develop" class="chip svelte-1k8vqwh" data-color="purple">Develop</a>
+</nav>
+<main>
+<div data-color="green">
+
+<aside><div class="disable svelte-rwyh0m collapsed"></div>
+  <div class="side svelte-rwyh0m collapsed mobile" style="--width: 250px"><button class="svelte-rwyh0m"><i class="svelte-rwyh0m"><svg class="app-switcher-button-icon svelte-rwyh0m" version="1.1" id="Layer_1" x="0" y="0" width="100%" height="100%" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"></path><path fill="none" d="M0,0h24v24H0V0z"></path></svg></i></button>
+    
+    <div><span slot="main" class="table-of-contents svelte-3610lv"><div class="parent svelte-16pcw0z"><h2 class="svelte-16pcw0z">Animate</h2>
+  <ul class="svelte-16pcw0z">
+
+<li data-level="2" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#overview-of-html-css" class="svelte-1ofmdrc">Day 1: Overview of HTML + CSS
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#html-vs-css-15-mins" class="svelte-1ofmdrc">Lesson 1: HTML vs CSS (15 mins)
+      </a>
+</li>
+
+<li data-level="4" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#html-xml" class="svelte-1ofmdrc">HTML/XML
+      </a>
+</li>
+
+<li data-level="4" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#opening-closing-tags" class="svelte-1ofmdrc">Opening/Closing Tags
+      </a>
+</li>
+
+<li data-level="4" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#attributes" class="svelte-1ofmdrc">Attributes
+      </a>
+</li>
+
+<li data-level="4" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#style-attribute" class="svelte-1ofmdrc">Style Attribute
+      </a>
+</li>
+
+<li data-level="4" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#css" class="svelte-1ofmdrc">CSS
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#setup-15-mins" class="svelte-1ofmdrc">Activity 1: Setup (15 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#hello-world-10-mins" class="svelte-1ofmdrc">Activity 2: Hello World! (10 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#poetry-15-mins" class="svelte-1ofmdrc">Activity 3: Poetry (15 mins)
+      </a>
+</li>
+
+<li data-level="2" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#day-2" class="svelte-1ofmdrc">Day 2
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#make-a-logo-30-mins" class="svelte-1ofmdrc">Activity 1: Make a Logo! (30 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#adding-a-meme-10-mins" class="svelte-1ofmdrc">Lesson 1: Adding a Meme! (10 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#add-your-logo-to-a-website-15-mins" class="svelte-1ofmdrc">Activity 2: Add your logo to a website! (15 mins)
+      </a>
+</li>
+
+<li data-level="2" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#day-3" class="svelte-1ofmdrc">Day 3
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#multiple-pages-15-mins" class="svelte-1ofmdrc">Activity 1: Multiple Pages! (15 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#css-animations-external-css-30-mins" class="svelte-1ofmdrc">Activity 2: CSS Animations + External CSS (30 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#experiment-more-with-css-15-mins" class="svelte-1ofmdrc">Activity 3: Experiment More with CSS (15 mins)
+      </a>
+</li>
+
+<li data-level="2" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#day-4" class="svelte-1ofmdrc">Day 4
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#animate-an-svg-20-mins" class="svelte-1ofmdrc">Activity 1: Animate an SVG (20 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#animate-multiple-shapes-10-mins" class="svelte-1ofmdrc">Activity 2: Animate Multiple Shapes (10 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#create-your-own-animation-15-mins" class="svelte-1ofmdrc">Activity 3: Create Your Own Animation (15 mins)
+      </a>
+</li>
+
+<li data-level="2" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#day-5" class="svelte-1ofmdrc">Day 5:
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#make-two-more-animations-30-mins" class="svelte-1ofmdrc">Activity 1: Make Two More Animations (30 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#make-a-homepage-15-mins" class="svelte-1ofmdrc">Activity 2: Make a Homepage (15 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-1ofmdrc"><a href="#present-15-mins" class="svelte-1ofmdrc">Activity 3: Present (15 mins)
+      </a>
+</li></ul>
+</div></span></div></div>
+  
+</aside>
+    <article class="card markdown svelte-3610lv"><h1 id="animate">Animate</h1>
+<h2 id="overview-of-html-css">Day 1: Overview of HTML + CSS</h2>
+<p>We will set up our environments, go over what html and css are used
+for, learn the structure of an XML language, and create our first
+two sites.</p>
+<table><thead><tr><th>Lesson/Activity</th>
+<th>Time</th></tr></thead>
+<tbody><tr><td>Lesson 1: HTML vs CSS</td>
+<td>20 mins</td></tr>
+<tr><td>Activity 1: Setup</td>
+<td>20 mins</td></tr>
+<tr><td>Activity 2: Hello World!</td>
+<td>10 mins</td></tr>
+<tr><td>Activity 3: Poetry (optional)</td>
+<td>15 mins</td></tr>
+<tr><td>Wrap Up</td>
+<td>5 mins</td></tr></tbody></table>
+<h3 id="html-vs-css-15-mins">Lesson 1: HTML vs CSS (15 mins)</h3>
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>Try disabling CSS and JavaScript in your browser to see what CSS, HTML, and JavaScript do. JavaScript can be disabled through browser settings in all browsers and CSS can be disabled in Firefox and Safari with the developer tools.</p></blockquote>
+<blockquote class="important"><p style="font-weight: bold;"></p>
+<p>Some examples might seem really long or confusing! Don’t be afraid to ask questions about any of the code in the examples.</p></blockquote>
+<h4 id="html-xml">HTML/XML</h4>
+<p>HTML is an XML markup language which can be used to make titles,
+headers, links, images, lists, tables, and style text. XML is a
+general format which is used for many things, but
+which was invented for HTML.</p>
+<p>XML consists of elements which have an opening tag (<code>&lt;tagName&gt;</code>) and a closing
+tag (<code>&lt;/tagName&gt;</code>). Elements can contain other elements and text:</p>
+<blockquote class="ask"><p style="font-weight: bold;"></p>
+<p>What do you think the <code>&lt;strong&gt;...&lt;/strong&gt;</code> HTML element does?</p></blockquote>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<blockquote class="ask"><p style="font-weight: bold;"></p>
+<p>Why do you think that all of the text is on one line instead of being on four lines?</p>
+<details><summary>Answer</summary>
+<p>The browser automatically removes all of the extra whitespace (spaces, tabs, and newlines) between elements and text. This is so that you can format your code nicely without having to worry about the format of your code showing up on the actual website. Later we’ll go over how to have multiple lines render in the browser!</p></details></blockquote>
+<p>Elements can have attributes as well:</p>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #65D656">img</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">src</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;puppy.png&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">alt</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;a happy puppy&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span></code></pre><!-- HTML_TAG_END -->
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>Write the above <code>&lt;img /&gt;</code> tag on a whiteboard or on a piece of paper and label the <code>tag name</code>, the two <code>attribute names</code>, and the two <code>attribute values</code>.</p>
+<details><summary>Answer</summary>
+<p>Tag name: <code>img</code></p>
+<p>Attribute names: <code>src</code>, <code>alt</code></p>
+<p>Attribute values: <code>&quot;puppy.png&quot;</code>, <code>&quot;a happy puppy&quot;</code></p></details></blockquote>
+<blockquote class="note"><p style="font-weight: bold;">Note</p>
+<p>We will cover what <a href="#adding-a-meme">img tags</a> do and how they work later in the lesson.</p></blockquote>
+<h4 id="opening-closing-tags">Opening/Closing Tags</h4>
+<p>A tag in HTML is what is surrounded by the angle brackets: <code>&lt;</code> <code>&gt;</code> (aka the greater than/less than symbols)</p>
+<p>In the following example, <code>&lt;p&gt;</code> is the opening tag, and <code>&lt;/p&gt;</code> is the closing tag. The opening tag, closing tag, and what is in between make up one HTML element. There is one HTML element in this example:</p>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #65D656">p</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4"> </span><span style="color: #6A9955">&lt;!-- opening tag --&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  Paragraph text between opening tag and closing tag</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #65D656">p</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4"> </span><span style="color: #6A9955">&lt;!-- closing tag --&gt;</span></span></code></pre><!-- HTML_TAG_END -->
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<blockquote class="ask"><p style="font-weight: bold;"></p>
+<p>What is the difference between opening and closing tags?</p>
+<details><summary>Answer</summary>
+<p>Closing tags have a forward slash (<code>/</code>) right after the opening angle bracket: <code>&lt;/</code></p></details></blockquote>
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>You can type in the tag name (<code>p</code>, <code>h1</code>, etc) and then hit <kbd>Tab</kbd> to automatically create an opening tag and a closing tag. Then if you hit <kbd>Enter</kbd> right after, it will automatically create an indented line in between the opening tag and the closing tag. Try it below!</p>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+</blockquote>
+<h4 id="attributes">Attributes</h4>
+<p>Attributes are used to give information about the element, such as formatting and metadata. The structure of an attribute is <code>attribute-name=&quot;attribute-value&quot;</code>. You can put as many attributes as you want inside of the opening tag, just make sure to put a space in between each one. The first item inside the angle brackets should always be the tag name (ex. <code>p</code>, <code>h1</code>, etc) which can then be followed by attributes (ex. <code>class</code>, <code>src</code>, <code>href</code>, etc). Here is an example:</p>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<blockquote class="important"><p style="font-weight: bold;"></p>
+<p>It is strongly recommended to always put quotes around the attribute value! You technically don’t need to if you only use letters (a-z/A-Z), numbers (0-9), periods (.), and hyphens (-) in the attribute value, but if you don’t usually put quotes you’ll forget to when you have an attribute which contains a character that is not a letter, a number, a period, or a hyphen. This is one of the most common mistakes I see!</p></blockquote>
+<h4 id="style-attribute">Style Attribute</h4>
+<p>The style attribute lets you style your HTML element with CSS to make it look more fancy. Here’s an example:</p>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<p>The style tag is a list of css properties and property values separated by semicolons.</p>
+<blockquote class="important"><p style="font-weight: bold;"></p>
+<p>You don’t <em>need</em> to put a semicolon at the end of the last property, but you <strong>should</strong> because otherwise you will forget to and wonder why your CSS isn’t working. Please just always put a semicolon after each css declaration.</p></blockquote>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #D4D4D4">                   ▼property value (red)</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #65D656">div</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">style</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;color: red;&quot;</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">Some red Text</span><span style="color: #808080">&lt;/</span><span style="color: #65D656">div</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">            ▲property (color)</span></span>
+<span class="line"><span style="color: #D4D4D4">            ^________^</span></span>
+<span class="line"><span style="color: #D4D4D4">             declaration (color: red)</span></span></code></pre><!-- HTML_TAG_END -->
+<h4 id="css">CSS</h4>
+<p>CSS stands for <br>
+<strong>C</strong>ascading <br>
+<strong>S</strong>tyle <br>
+<strong>S</strong>heets</p>
+<p>CSS lets you use CSS selectors to indicate to the browser which element to apply styling within the curly brackets to. You can think of the browser copying and pasting what is in between the curly brackets into the specified element’s <code>style=</code> attribute.</p>
+<p>There are a few different selectors when it comes to css:</p>
+<table><thead><tr><th>Selector</th>
+<th>Description</th>
+<th>Example</th></tr></thead>
+<tbody><tr><td><code>element</code></td>
+<td>Selects all elements of the given HTML tag like the body element (<code>&lt;body&gt;...&lt;/body&gt;</code>) for example</td>
+<td><code>body</code></td></tr>
+<tr><td><code>#id</code></td>
+<td>Selects the element with the given id like <code>&lt;div id=&quot;lolz&quot;&gt;...&lt;/div&gt;</code></td>
+<td><code>#lolz</code></td></tr>
+<tr><td><code>.class</code></td>
+<td>Selects all elements with the given class like <code>&lt;div class=&quot;fancy&quot;&gt; ... &lt;/div&gt;</code></td>
+<td><code>.fancy</code></td></tr></tbody></table>
+<p>You can either put css inline with a <code>&lt;style&gt;</code> HTML element, put CSS for a single element in the <code>style=</code> HTML attribute, or put CSS in a separate file with the <code>.css</code> file extension.</p>
+<p>There are even more selectors than the ones above, some of which we will cover in <a href="/develop" data-color="purple" class="accent-color">Level 3</a>!</p>
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>The element in between the opening head tag (<code>&lt;head&gt;</code>) on line 1 and the closing head tag (<code>&lt;/head&gt;</code>) on line 3 is called a <code>&lt;link /&gt;</code> tag. It is used to tell the browser which file your css rules are in. In the example below they’re located in <code>style.css</code>. Go ahead and click on the <code>style.css</code> tab to see and try editing the CSS rules!</p></blockquote>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<blockquote class="ask"><p style="font-weight: bold;"></p>
+<p>What happens if you change the font style of the <code>.asdf</code> class to be <code>italicized</code> instead of <code>bold</code> or if you change the color of <code>.any-class-name</code> to be one of <a href="https://147colors.com/" rel="noreferrer" target="_blank">these colors</a> instead of <code>darkred</code>?</p></blockquote>
+<h3 id="setup-15-mins">Activity 1: Setup (15 mins)</h3>
+<p>Set up Replit or VS Code, depending on instructor preference. If using Replit, have students always start by deleting everything inside the <code>index.html</code> file and deleting the <code>style.css</code> and <code>script.js</code> files as well.</p>
+<p>This is because Replit’s boilerplate code isn’t standard and can lead to problems like a horizontal scrollbar and a title of “replit”.</p>
+<h3 id="hello-world-10-mins">Activity 2: Hello World! (10 mins)</h3>
+<p>Introduction to HTML with a Hello World website, complete with a header and a paragraph.</p>
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>You can enter an exclamation mark (<kbd>!</kbd>) followed by <kbd>Tab</kbd> to auto-complete the HTML boilerplate:</p>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #808080">&lt;!</span><span style="color: #65D656">DOCTYPE</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">html</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #65D656">html</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">lang</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;en&quot;</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">head</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #808080">&lt;</span><span style="color: #65D656">meta</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">charset</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;UTF-8&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #808080">&lt;</span><span style="color: #65D656">meta</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">http-equiv</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;X-UA-Compatible&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">content</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;IE=edge&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #808080">&lt;</span><span style="color: #65D656">meta</span></span>
+<span class="line"><span style="color: #D4D4D4">      </span><span style="color: #9CDCFE">name</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;viewport&quot;</span></span>
+<span class="line"><span style="color: #D4D4D4">      </span><span style="color: #9CDCFE">content</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;width=device-width, initial-scale=1.0&quot;</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #808080">/&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #808080">&lt;</span><span style="color: #65D656">title</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">Document</span><span style="color: #808080">&lt;/</span><span style="color: #65D656">title</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;/</span><span style="color: #65D656">head</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">body</span><span style="color: #808080">&gt;&lt;/</span><span style="color: #65D656">body</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #65D656">html</span><span style="color: #808080">&gt;</span></span></code></pre><!-- HTML_TAG_END -->
+<p>Try it below!</p>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+</blockquote>
+<blockquote class="important"><p style="font-weight: bold;"></p>
+<p>Make sure to change the inside of the <code>&lt;title&gt;</code> tag.</p></blockquote>
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>You can put a <code>&lt;style&gt;</code> element inside the <code>&lt;head&gt;</code> element to style your CSS.</p></blockquote>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<h3 id="poetry-15-mins">Activity 3: Poetry (15 mins)</h3>
+<p>We are going to make two poems: first we have “Echo,” a series of <code>h</code> tags which get smaller, followed by any poem that has at least three lines! If the student can’t think of one, there’s always:</p>
+<blockquote class="default"><p style="font-weight: bold;"></p>
+<p>roses are red<br>
+violets are blue<br>
+there’s always a programmer<br>
+that’s better than you</p></blockquote>
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>The <code>&lt;br&gt;</code> tag adds a line break.</p></blockquote>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<h2 id="day-2">Day 2</h2>
+<table><thead><tr><th>Lesson/Activity</th>
+<th>Time</th></tr></thead>
+<tbody><tr><td>Activity 1: Make a Logo!</td>
+<td>30 mins</td></tr>
+<tr><td>Lesson 1: Adding a Meme!</td>
+<td>10 mins</td></tr>
+<tr><td>Activity 2: Add your logo to a website! (Optional)</td>
+<td>15 mins</td></tr>
+<tr><td>Wrap Up</td>
+<td>5 mins</td></tr></tbody></table>
+<h3 id="make-a-logo-30-mins">Activity 1: Make a Logo! (30 mins)</h3>
+<p>Make a logo using basic shapes, css, and text.</p>
+<blockquote class="important"><p style="font-weight: bold;"></p>
+<p>Start with this basic template, including the <code>xmlns=&quot;http://www.w3.org/2000/svg&quot;</code> attribute:</p>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #65D656">svg</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">viewBox</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;0 0 100 100&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">xmlns</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;http://www.w3.org/2000/svg&quot;</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">circle</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">cx</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">cy</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">r</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #808080">&gt;&lt;/</span><span style="color: #65D656">circle</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #65D656">svg</span><span style="color: #808080">&gt;</span></span></code></pre><!-- HTML_TAG_END -->
+<p>Otherwise the browser will show something like this: <img src="animate/d2/forgot-xmlns.png" alt="Text which reads, This XML file does not appear to have any style information associated with it. The document tree is shown below."></p></blockquote>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
+<p>Then add text to it:</p>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #65D656">svg</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">viewBox</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;0 0 100 100&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">xmlns</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;http://www.w3.org/2000/svg&quot;</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">circle</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">cx</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">r</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">cy</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">style</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;fill: black&quot;</span><span style="color: #808080">&gt;&lt;/</span><span style="color: #65D656">circle</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">text</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">x</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">y</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">style</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;fill: white; font-size: 15px&quot;</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">Text</span><span style="color: #808080">&lt;/</span><span style="color: #65D656">text</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #65D656">svg</span><span style="color: #808080">&gt;</span></span></code></pre><!-- HTML_TAG_END -->
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" r="50" cy="50" style="fill: black"></circle><text x="50" y="50" style="fill: white; font-size: 15px">Text
+  </text></svg>
+<p>Then change the font with a style tag. Note how I moved the styles for the text element that was in <code>style=</code> into the newly created style tag. A good rule is generally if you have more than 2 CSS properties, it&#39;s time to put the CSS into a style tag:
+</p>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #65D656">svg</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">viewBox</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;0 0 100 100&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">xmlns</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;http://www.w3.org/2000/svg&quot;</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">circle</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">cx</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">r</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">cy</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">style</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;fill: black&quot;</span><span style="color: #808080">&gt;&lt;/</span><span style="color: #65D656">circle</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">text</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">x</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">y</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">Text</span><span style="color: #808080">&lt;/</span><span style="color: #65D656">text</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">style</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">    text {</span></span>
+<span class="line"><span style="color: #D4D4D4">      font-size: 15px;</span></span>
+<span class="line"><span style="color: #D4D4D4">      font-family: cursive;</span></span>
+<span class="line"><span style="color: #D4D4D4">      fill: white;</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;/</span><span style="color: #65D656">style</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #65D656">svg</span><span style="color: #808080">&gt;</span></span></code></pre><!-- HTML_TAG_END -->
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" r="50" cy="50" style="fill: black"></circle><text id="cursive" x="50" y="50" style="font-size: 15px; font-family: cursive; fill: white;">Text</text></svg>
+<p>You can also use CSS transforms to rotate the text and more!</p>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #65D656">svg</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">viewBox</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;0 0 100 100&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">xmlns</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;http://www.w3.org/2000/svg&quot;</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">circle</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">cx</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">r</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">cy</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">style</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;fill: green&quot;</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;/</span><span style="color: #65D656">circle</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">text</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">x</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;0&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">y</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;52&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">comic</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">sans</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;&quot;</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">Graphic design is my passion</span><span style="color: #808080">&lt;/</span><span style="color: #65D656">text</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">style</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">    text {</span></span>
+<span class="line"><span style="color: #D4D4D4">      fill: lightblue;</span></span>
+<span class="line"><span style="color: #D4D4D4">      font-size: 7px;</span></span>
+<span class="line"><span style="color: #D4D4D4">      font-family: &#39;Comic Sans MS&#39;, &#39;Comic Sans&#39;, cursive;</span></span>
+<span class="line"><span style="color: #D4D4D4">      transform: rotate(5deg);</span></span>
+<span class="line"><span style="color: #D4D4D4">      transform-origin: left</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;/</span><span style="color: #65D656">style</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #65D656">svg</span><span style="color: #808080">&gt;</span></span></code></pre><!-- HTML_TAG_END -->
+<p><img src="animate/d2/a1/logo.svg" alt="Graphic design is my passion"></p>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<h3 id="adding-a-meme-10-mins">Lesson 1: Adding a Meme! (10 mins)</h3>
+<p>I just added an image with the <code>&lt;img&gt;</code> tag, moved the CSS to a new file, and added some CSS for the image.</p>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #65D656">img</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">src</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;/car.jpeg&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">alt</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;Car salesman standing in front of car.&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span></code></pre><!-- HTML_TAG_END -->
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>Make sure your image is in the same folder as your HTML file for the image to show up! If you instead want to make an images folder and put your images in there, make sure to set the src to start with <code>/images/</code> like <code>/images/car.jpeg</code></p></blockquote>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+
+<h3 id="add-your-logo-to-a-website-15-mins">Activity 2: Add your logo to a website! (15 mins)</h3>
+<p>Add an index.html file in whatever directory you have your svg file and use an <code>&lt;img /&gt;</code> tag to put that image on the html page.</p>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<h2 id="day-3">Day 3</h2>
+<table><thead><tr><th>Lesson/Activity</th>
+<th>Time</th></tr></thead>
+<tbody><tr><td>Activity 1: Multiple Pages!</td>
+<td>15 mins</td></tr>
+<tr><td>Activity 2: CSS Animations + External CSS</td>
+<td>30 mins</td></tr>
+<tr><td>Activity 3: Experiment More with CSS (optional)</td>
+<td>10 mins</td></tr>
+<tr><td>Wrap up</td>
+<td>5 mins</td></tr></tbody></table>
+<h3 id="multiple-pages-15-mins">Activity 1: Multiple Pages! (15 mins)</h3>
+<p>Make a multi-page website! Complete with <code>&lt;a&gt;</code> links to go in between the two pages. See line 21 in <code>index.html</code> and line 22 in <code>second.html</code> for an example of how to use the <code>&lt;a&gt;</code> tag.</p>
+<blockquote class="note"><p style="font-weight: bold;">Note</p>
+<p>We use the <code>&lt;a&gt;</code> tag instead of the <code>&lt;link&gt;</code> tag for links in between pages because in the older days of the internet the <code>&lt;a&gt;</code> tag had another use as an “anchor” to anchor one page to another. This other use of the <code>&lt;a&gt;</code> tag isn’t used today, but knowing that <code>a</code> stands for “anchor” might help you remember that the <code>&lt;a&gt;</code> tag is for “anchoring” pages together!</p></blockquote>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<h3 id="css-animations-external-css-30-mins">Activity 2: CSS Animations + External CSS (30 mins)</h3>
+<p>Create a simple spooky CSS animation. In <code>style.css</code> we animage the <code>opacity</code> css property</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" rel="noreferrer" target="_blank">MDN docs</a></p>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<h3 id="experiment-more-with-css-15-mins">Activity 3: Experiment More with CSS (15 mins)</h3>
+<p>Look at websites around the web and when you find a design you like, inspect that website’s CSS code. (right click + Inspect)</p>
+<p>Try to implement that design on your own in a new Replit!</p>
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>Don’t be afraid to ask questions of your instructors, especially in this activity. Obviously the entire internet will have CSS that we have not covered in this class so it makes sense that you’d have questions!</p></blockquote>
+<h2 id="day-4">Day 4</h2>
+<table><thead><tr><th>Lesson/Activity</th>
+<th>Time</th></tr></thead>
+<tbody><tr><td>Activity 1: Animate an SVG</td>
+<td>20 mins</td></tr>
+<tr><td>Activity 2: Animate Multiple Shapes (optional)</td>
+<td>10 mins</td></tr>
+<tr><td>Activity 3: Create Your Own Animation</td>
+<td>15 mins</td></tr>
+<tr><td>Wrap up</td>
+<td>5 mins</td></tr></tbody></table>
+<h3 id="animate-an-svg-20-mins">Activity 1: Animate an SVG (20 mins)</h3>
+<p>Start with this template:</p>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>Try changing the <code>x</code>, <code>y</code>, <code>width</code>, and <code>height</code> HTML attributes to see how they change the rectangle! See if you can center the rectangle in the 100 by 100 viewbox.</p>
+<details><summary>Answer</summary>
+<p>Set <code>x</code> and <code>y</code> to be 25.</p></details>
+Then add an animation to it:
+</blockquote>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #65D656">svg</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">viewBox</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;0 0 100 100&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">xmlns</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;http://www.w3.org/2000/svg&quot;</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">rect</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;rect&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">x</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;25&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">y</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;25&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">width</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">height</span><span style="color: #D4D4D4">=</span><span style="color: #F5C378">&quot;50&quot;</span><span style="color: #808080">&gt;&lt;/</span><span style="color: #65D656">rect</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #65D656">style</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">    @keyframes bounce {</span></span>
+<span class="line"><span style="color: #D4D4D4">      0% {</span></span>
+<span class="line"><span style="color: #D4D4D4">        y: 25;</span></span>
+<span class="line"><span style="color: #D4D4D4">      }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">      100% {</span></span>
+<span class="line"><span style="color: #D4D4D4">        y: 50;</span></span>
+<span class="line"><span style="color: #D4D4D4">      }</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">    #rect {</span></span>
+<span class="line"><span style="color: #D4D4D4">      animation: bounce 2s ease-in-out infinite alternate;</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;/</span><span style="color: #65D656">style</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #65D656">svg</span><span style="color: #808080">&gt;</span></span></code></pre><!-- HTML_TAG_END -->
+<p><img src="animate/d4/a1/bounce.svg" alt="bouncing svg"></p>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<h3 id="animate-multiple-shapes-10-mins">Activity 2: Animate Multiple Shapes (10 mins)</h3>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<h3 id="create-your-own-animation-15-mins">Activity 3: Create Your Own Animation (15 mins)</h3>
+<p>Create your very own animation!</p>
+<p>You can find more shapes and how to make them here: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element#basic_shapes" rel="noreferrer" target="_blank">MDN Docs</a></p>
+<p>Of course you can also use the two shapes we already learned, <code>rect</code> and <code>circle</code>, to do plenty of very very awesome animations.</p>
+<h2 id="day-5">Day 5:</h2>
+<table><thead><tr><th>Lesson/Activity</th>
+<th>Time</th></tr></thead>
+<tbody><tr><td>Activity 1: Make Two More Animations</td>
+<td>30 mins</td></tr>
+<tr><td>Activity 2: Make a Homepage</td>
+<td>15 mins</td></tr>
+<tr><td>Activity 3: Present (15 mins)</td>
+<td>15 mins</td></tr></tbody></table>
+<h3 id="make-two-more-animations-30-mins">Activity 1: Make Two More Animations (30 mins)</h3>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<h3 id="make-a-homepage-15-mins">Activity 2: Make a Homepage (15 mins)</h3>
+
+  <div class="parent svelte-155hayo"><div class="message svelte-155hayo">Loading...</div></div>
+
+<h3 id="present-15-mins">Activity 3: Present (15 mins)</h3>
+<p>Present your projects with the class!</p></article></div>
+</main>
+
+
+		<script type="module" data-sveltekit-hydrate="dqgw4">
+			import { start } from "./_app/immutable/start-9d5ded20.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="dqgw4"]').parentNode,
+				version: "1675256879079",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+  </body>
+</html>

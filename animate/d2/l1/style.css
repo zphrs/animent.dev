@@ -1,0 +1,20 @@
+body {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive,
+    sans-serif;
+}
+img {
+  /* This will make the image 
+  cover the full width of the page */
+  width: 100%;
+  /* If the page is wider than 400 pixels, 
+  the image will stop getting bigger */
+  max-width: 400px;
+  /* This will make the next line work 
+  because images are inline by default */
+  display: block;
+  /* This will center the image */
+  margin: auto;
+  /* This will make the image 
+  have rounded corners */
+  border-radius: 0.5rem;
+}
