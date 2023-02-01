@@ -60,13 +60,13 @@
   <div class="about card">
     <h2>About</h2>
     <p>
-      This site was made for Code For Fun to teach web design. For
-      each level there is editable example code. You can edit the
-      example code and see a preview of the page with your edits, but
-      any edits you make will disappear once you refresh the page. If
-      you want to save your changes I recommend copying and pasting
-      your edits into <a href="https://replit.com">replit.com</a> or a
-      different text editor of choice.
+      This site was made to teach web design. For each level there is
+      editable example code. You can edit the example code and see a
+      preview of the page with your edits, but any edits you make will
+      disappear once you refresh the page. If you want to save your
+      changes I recommend copying and pasting your edits into <a
+        href="https://replit.com">replit.com</a> or a different text editor
+      of choice.
     </p>
   </div>
 </div>
