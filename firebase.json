@@ -1,10 +1,20 @@
 {
   "hosting": {
     "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "/animate",
+        "destination": "/animate.html"
+      },
+      {
+        "source": "/experiment",
+        "destination": "/experiment.html"
+      },
+      {
+        "source": "/develop",
+        "destination": "/develop.html"
+      }
     ]
   }
 }
