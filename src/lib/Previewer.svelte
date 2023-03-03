@@ -6,6 +6,7 @@
   import Files from './Previewer/Files.svelte'
   import type { Tab, FileTab } from './Previewer/tab'
   import { base } from '$app/paths'
+  import IframeMessager from './IframeMessager.svelte'
   export let paths: string[] = []
   export let root: string
   let codeMirrorFocused = false
@@ -13,8 +14,13 @@
   let tabs: Tab[] = [
     { title: 'Loading...', id: 'loading', selected: false, index: 0 }
   ]
+  $: fileUrl =
+    previewedTab && browser
+      ? new URL(previewedTab.path, window.location.origin + base)
+      : undefined
   let previewedTab: FileTab | undefined
-  let iframe: HTMLIFrameElement | undefined
+  let iframe: IframeMessager | undefined
+
   const handleIframeMessage = (e: MessageEvent) => {
     if (e.data.type === 'goto') {
       if (iframe) {
@@ -26,17 +32,7 @@
       }
     }
   }
-  onMount(() => {
-    if (browser) {
-      //listen for iframe messages
-      window.addEventListener('message', handleIframeMessage)
-    }
-  })
-  onDestroy(() => {
-    if (browser) {
-      window.removeEventListener('message', handleIframeMessage)
-    }
-  })
+
   function getHighestCommonPath(paths: string[]) {
     const pathsSplit = paths.map((path) =>
       path.split('/').slice(0, -1)
@@ -80,11 +76,12 @@
 
   async function getTabs() {
     const tabPromises = paths.map(async (path, index) => {
+      path = base + path
       const commonPath = getHighestCommonPath(paths)
       const commonPathLength = commonPath.length
       const relativePath = path.slice(commonPathLength)
       const lang = path.slice(path.lastIndexOf('.') + 1)
-      const fileContent = await fetch(`${base}${path}`).then((res) =>
+      const fileContent = await fetch(`${path}`).then((res) =>
         res.text()
       )
       return {
@@ -196,10 +193,7 @@
         if (!href) {
           continue
         }
-        const resolvedHref = new URL(
-          href,
-          new URL(htmlTab.path, window.location.origin)
-        )
+        const resolvedHref = new URL(href, fileUrl)
         // get file content
         const content = css[resolvedHref.pathname]
         // if file content exists
@@ -219,10 +213,12 @@
       // if src is a file
       if (src) {
         // get file content
-        const resolvedSrc = new URL(
-          src,
-          new URL(htmlTab.path, window.location.origin)
-        )
+        console.log({
+          base: fileUrl,
+          path: htmlTab.path,
+          fileUrl
+        })
+        const resolvedSrc = new URL(src, fileUrl)
         const fileContent = js[resolvedSrc.pathname]
         // if file content exists
         if (fileContent) {
@@ -243,10 +239,7 @@
       if (!src) {
         continue
       }
-      const resolvedSrc = new URL(
-        src,
-        new URL(htmlTab.path, window.location.origin)
-      )
+      const resolvedSrc = new URL(src, new URL(htmlTab.path, fileUrl))
       imgTag.setAttribute('src', resolvedSrc.href)
     }
     // find a tags
@@ -259,7 +252,7 @@
       }
       const resolvedHref = new URL(
         href,
-        new URL((tabs[0] as FileTab).path, window.location.origin + base)
+        new URL((tabs[0] as FileTab).path, fileUrl)
       )
       // check if href is an html file
       const file = htmlFiles[resolvedHref.pathname]
@@ -346,11 +339,12 @@
               bind:doc={selected.content} />
           {/if}
         {:else if selected.id === 'preview' && isFile(tabs[0])}
-          <iframe
+          <IframeMessager
             bind:this={iframe}
-            style="width: 100%; border-radius: 0"
+            style="width: 100%; border-radius: 0; height: calc(100vh - 8.75rem)"
             title={selected.title}
-            src={htmlToDataURL(getHTML(tabs[0]))} />
+            src={htmlToDataURL(getHTML(tabs[0]))}
+            on:message={onmessage} />
         {/if}
       {/if}
     {/key}
@@ -358,9 +352,6 @@
 {/await}
 
 <style lang="scss">
-  iframe {
-    height: calc(100vh - 8.75rem);
-  }
   .parent {
     display: grid;
     grid-template-columns: 1fr;
