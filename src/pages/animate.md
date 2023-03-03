@@ -83,7 +83,7 @@ Elements can have attributes as well:
 
 > note Note
 >
-> We will cover what [img tags](#adding-a-meme) do and how they work later in the lesson.
+> We will cover what [img tags](#adding-a-meme-10-mins) do and how they work later in the lesson.
 
 #### Opening/Closing Tags
 
