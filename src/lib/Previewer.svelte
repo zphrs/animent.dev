@@ -259,7 +259,7 @@
       }
       const resolvedHref = new URL(
         href,
-        new URL((tabs[0] as FileTab).path, window.location.origin)
+        new URL((tabs[0] as FileTab).path, window.location.origin + base)
       )
       // check if href is an html file
       const file = htmlFiles[resolvedHref.pathname]
