@@ -3,17 +3,8 @@
   import { expoOut } from 'svelte/easing'
   import { onDestroy } from 'svelte'
   import { previousPageIndex } from '../../stores'
-  export let data: {
-    title: string
-    color: string
-    headings: Array<{
-      level: number
-      title: string
-      id: string
-      element: HTMLElement | null
-    }>
-    content: any
-  }
+  import type { PageData } from './$types'
+  export let data: PageData
   $: ({ title, color, headings } = data)
   /**@type Array<{level: number, title: string, id: string, element: HTMLElement | null}> */
   import paths from '../navPaths'
@@ -24,9 +15,7 @@
     const previousIndex = $previousPageIndex
 
     direction =
-      previousIndex === -1
-        ? 0
-        : Math.sign(titleIndex - previousIndex)
+      previousIndex === -1 ? 0 : Math.sign(titleIndex - previousIndex)
     previousPageIndex.set(titleIndex)
   }
   onDestroy(() => {})

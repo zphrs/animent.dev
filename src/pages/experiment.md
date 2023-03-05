@@ -19,19 +19,33 @@ color: orange
 
 TODO: make review activity (some sort of multi page website)
 
+Edit the HTML files below to do two things:
+
+1. Make it look better with different fonts, colors (especially the `background-color` and the link `color`), along with any other CSS you like.
+2. Replace the joke with your own! Feel free to add
+   in images or other HTML elements.
+
+<Previewer root="/experiment/d1/a1/index.html" paths={["/experiment/d1/a1/second.html"]} />
+
 ### Activity 2: Hello World with JS (5 mins)
 
 ```js
 console.log('Hello World')
 ```
 
-### Activity 2: Introduce JS + JS Canvas (30 mins)
+### Activity 3: Introduce JS + JS Canvas (40 mins)
 
-Start by drawing 1 rectangle to the js canvas.
+Start by drawing one rectangle to the js canvas. It can be a square, like the one shown below, or it can be a rectangle of your choosing. You can change the background color and the rectangle number to whatever you'd like.
 
-<Previewer root="/experiment/d1/a2/rect.html" paths={["/experiment/d1/a2/square.js"]} />
+<Previewer root="/experiment/d1/a3/square.html" paths={["/experiment/d1/a3/square.js"]} />
 
-Then draw 10 rectangles onto the canvas using a for loop.
+Then draw 10 rectangles onto the canvas using a `for` loop:
+
+```js
+for (let i = 0; i < count; i++) {
+  // draw one rectangle here!
+}
+```
 
 If you're feeling inspired, play around and see what you can make!
 
@@ -39,11 +53,12 @@ If you're feeling inspired, play around and see what you can make!
 >
 > Try editing the `count` variable in the `squares.js` file!
 
-<Previewer root="/experiment/d1/a2/fancy.html" paths={["/experiment/d1/a2/squares.js"]} />
-
-### Lesson 3: Demo P5.js for Tomorrow (15 mins)
-
-TODO: make animated p5.js demo
+> answer
+>
+> <details>
+> <summary>Show Example</summary>
+> <Previewer root="/experiment/d1/a3/squares.html" paths={["/experiment/d1/a3/squares.js"]} />
+> </details>
 
 ## Day 2: P5.js animations
 
@@ -51,9 +66,13 @@ TODO: make animated p5.js demo
 
 TODO: Make demo project
 
+<Previewer root="/experiment/d2/a1/rect.html" paths={["/experiment/d2/a1/square.js"]} />
+
 ### Activity 2: P5.js animating (15 mins)
 
 TODO: Make demo project using the `draw()` function
+
+<Previewer root="/experiment/d2/a2/fancy.html" paths={["/experiment/d2/a2/squares.js"]} />
 
 ### Activity 3: P5.js interactivity (30 mins)
 
@@ -64,6 +83,8 @@ Introduce keyboard and mouse variables to the p5.js code.
 ## Day 3: Classes and Object Orientation
 
 ### Lesson 1: Vectors (45 mins)
+
+#### Why Learn Vectors?
 
 Go over vectors with this demo: https://replit.com/@ZephyrJones/vectors
 

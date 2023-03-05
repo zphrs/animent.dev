@@ -76,7 +76,6 @@
 
   async function getTabs() {
     const tabPromises = paths.map(async (path, index) => {
-      path = base + path
       const commonPath = getHighestCommonPath(paths)
       const commonPathLength = commonPath.length
       const relativePath = path.slice(commonPathLength)
@@ -84,6 +83,7 @@
       const fileContent = await fetch(`${path}`).then((res) =>
         res.text()
       )
+      path = base + path
       return {
         path,
         relativePath,
@@ -213,11 +213,6 @@
       // if src is a file
       if (src) {
         // get file content
-        console.log({
-          base: fileUrl,
-          path: htmlTab.path,
-          fileUrl
-        })
         const resolvedSrc = new URL(src, fileUrl)
         const fileContent = js[resolvedSrc.pathname]
         // if file content exists
