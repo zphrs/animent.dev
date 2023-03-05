@@ -114,6 +114,7 @@
   on:resize={() => onResize(mobile)} />
 
 <aside>
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
   <div
     class="disable"
     class:collapsed={mobile ? collapsed : true}
