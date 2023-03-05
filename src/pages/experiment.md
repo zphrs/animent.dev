@@ -25,7 +25,7 @@ Edit the HTML files below to do two things:
 2. Replace the joke with your own! Feel free to add
    in images or other HTML elements.
 
-<Previewer root="/experiment/d1/a1/index.html" paths={["/experiment/d1/a1/second.html"]} />
+<Previewer root="/experiment/d1/a1/index.html" paths={["/experiment/d1/a1/punchline.html"]} />
 
 ### Activity 2: Hello World with JS (5 mins)
 

@@ -2,7 +2,6 @@
   import { browser } from '$app/environment'
   import { onDestroy, onMount } from 'svelte'
   import { mobile } from '../stores'
-  import CodeMirror from './CodeMirror.svelte'
   import Files from './Previewer/Files.svelte'
   import type { Tab, FileTab } from './Previewer/tab'
   import { base } from '$app/paths'
@@ -11,6 +10,7 @@
   export let root: string
   let codeMirrorFocused = false
   let selected: Tab | undefined
+  let CodeMirror = import('./CodeMirror.svelte')
   let tabs: Tab[] = [
     { title: 'Loading...', id: 'loading', selected: false, index: 0 }
   ]
@@ -28,7 +28,9 @@
           .filter(isFile)
           .filter((tab) => tab.path == e.data.url)[0]
         const html = getHTML(previewedTab)
+        console.log(html)
         iframe.src = htmlToDataURL(html)
+        console.log(iframe)
       }
     }
   }
@@ -80,10 +82,11 @@
       const commonPathLength = commonPath.length
       const relativePath = path.slice(commonPathLength)
       const lang = path.slice(path.lastIndexOf('.') + 1)
+      path = base + path
+
       const fileContent = await fetch(`${path}`).then((res) =>
         res.text()
       )
-      path = base + path
       return {
         path,
         relativePath,
@@ -295,7 +298,7 @@
   const tabsPromise = getTabs()
 </script>
 
-{#await tabsPromise}
+{#await Promise.all([tabsPromise, CodeMirror])}
   <div class="parent">
     <div class="message">Loading...</div>
   </div>
@@ -328,10 +331,13 @@
           {#if isImage(selected)}
             <img src={selected.path} alt={selected.title} />
           {:else}
-            <CodeMirror
-              bind:focused={codeMirrorFocused}
-              lang={selected.lang}
-              bind:doc={selected.content} />
+            {#await CodeMirror then CodeMirror}
+              <svelte:component
+                this={CodeMirror.default}
+                bind:focused={codeMirrorFocused}
+                lang={selected.lang}
+                bind:doc={selected.content} />
+            {/await}
           {/if}
         {:else if selected.id === 'preview' && isFile(tabs[0])}
           <IframeMessager
@@ -339,7 +345,7 @@
             style="width: 100%; border-radius: 0; height: calc(100vh - 8.75rem)"
             title={selected.title}
             src={htmlToDataURL(getHTML(tabs[0]))}
-            on:message={onmessage} />
+            on:message={handleIframeMessage} />
         {/if}
       {/if}
     {/key}
