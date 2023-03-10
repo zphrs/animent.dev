@@ -360,7 +360,7 @@
     height: calc(100vh - 4.5rem);
     --medium-bright: hsl(var(--hue), 50%, 20%);
     --dark: hsl(var(--hue), 70%, 70%);
-    --bright: #1e1729;
+    --bright: #040421;
     --highlight: var(--color);
     background-color: var(--dark);
     color: #d4d4d4;

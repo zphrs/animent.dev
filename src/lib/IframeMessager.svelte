@@ -11,3 +11,9 @@
 <svelte:window on:message />
 
 <iframe {title} {src} {...$$props} />
+
+<style>
+  iframe {
+    height: inherit;
+  }
+</style>

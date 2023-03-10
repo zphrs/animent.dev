@@ -51,7 +51,10 @@
         interactive experiment: a game, a microapp, or a web toy.
       </p>
     </a>
-    <a href={`${base}/develop`} class="develop card" data-color="purple">
+    <a
+      href={`${base}/develop`}
+      class="develop card"
+      data-color="purple">
       <h3>Level 3: Develop</h3>
       <p>
         Develop complete applications with the React framework,
@@ -68,8 +71,8 @@
       preview of the page with your edits, but any edits you make will
       disappear once you refresh the page. If you want to save your
       changes I recommend copying and pasting your edits into <a
-        href="https://replit.com">replit.com</a> or a different text editor
-      of choice.
+        href="https://replit.com">replit.com</a
+      >, Visual Studio Code, or a different text editor.
     </p>
   </div>
 </div>

@@ -17,13 +17,10 @@ color: orange
 
 ### Activity 1: Review HTML + CSS (15 mins)
 
-TODO: make review activity (some sort of multi page website)
-
 Edit the HTML files below to do two things:
 
 1. Make it look better with different fonts, colors (especially the `background-color` and the link `color`), along with any other CSS you like.
-2. Replace the joke with your own! Feel free to add
-   in images or other HTML elements.
+2. Replace the joke with your own! Feel free to add in images or other HTML elements if you'd like.
 
 <Previewer root="/experiment/d1/a1/index.html" paths={["/experiment/d1/a1/punchline.html"]} />
 
@@ -42,16 +39,12 @@ Start by drawing one rectangle to the js canvas. It can be a square, like the on
 Then draw 10 rectangles onto the canvas using a `for` loop:
 
 ```js
-for (let i = 0; i < count; i++) {
+for (let i = 0; i < 10; i++) {
   // draw one rectangle here!
 }
 ```
 
 If you're feeling inspired, play around and see what you can make!
-
-> tip
->
-> Try editing the `count` variable in the `squares.js` file!
 
 > answer
 >
@@ -64,7 +57,17 @@ If you're feeling inspired, play around and see what you can make!
 
 ### Activity 1: P5.js drawing (15 mins)
 
-TODO: Make demo project
+Here's a duplicate of the first square we drew, this time using the P5.js library.
+
+Note the script import on line 10 with `src="../../p5.js"` inside of the `rect.html` on line 10. This imports the p5.js library.
+
+> ask
+>
+> <details>
+> <summary>What are libraries?</summary>
+> A library in programming is a collection of `code` such as `functions` and `classes` which are designed to make other programmers' jobs easier (we'll cover classes tomorrow).
+> You don't have to read all of the code inside of `p5.js` to use the library, you can simply call the functions laid out in the [p5.js documentation](https://p5js.org/reference/) and trust that the library will take care of the rest.
+> </details>
 
 <Previewer root="/experiment/d2/a1/rect.html" paths={["/experiment/d2/a1/square.js"]} />
 
@@ -72,11 +75,13 @@ TODO: Make demo project
 
 TODO: Make demo project using the `draw()` function
 
-<Previewer root="/experiment/d2/a2/fancy.html" paths={["/experiment/d2/a2/squares.js"]} />
+<Previewer root="/experiment/d2/a2/fancy.html" paths={["/experiment/d2/a2/fancy.js"]} />
 
 ### Activity 3: P5.js interactivity (30 mins)
 
 Introduce keyboard and mouse variables to the p5.js code.
+
+<Previewer root="/experiment/d2/a3/player.html" paths={["/experiment/d2/a3/player.js"]} />
 
 <Previewer root="/experiment/d2/a3/parallax.html" paths={["/experiment/d2/a3/parallax.js"]} />
 

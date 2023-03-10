@@ -15,7 +15,7 @@ color: purple
 
 Make a text feed that a user can post to and delete from with pure javascript
 
-Example: (https://posts.zphyrj.repl.co)https://posts.zphyrj.repl.cox]
+Example: [https://posts.zphyrj.repl.co](https://posts.zphyrj.repl.co)
 
 ### Lesson 1: Svelte Hello World
 

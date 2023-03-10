@@ -148,6 +148,7 @@
   }
   .parent {
     height: calc(100vh - 8rem);
+    height: calc(100dvh - 8rem); /* for mobile */
     display: flex;
     flex-direction: column;
   }

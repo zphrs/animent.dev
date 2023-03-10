@@ -19,7 +19,7 @@
     indentLess
   } from '@codemirror/commands'
   let CodeMirrorEditor: HTMLElement | null = null
-  import { forestCottageTheme } from './CodeMirror'
+  import { classyTheme } from './CodeMirror'
   import Arrow from './Arrow.svelte'
   import type { Extension } from '@codemirror/state'
   export let doc = ''
@@ -77,7 +77,7 @@
           abbreviationTracker(),
           rectangularSelection(),
           crosshairCursor(),
-          forestCottageTheme,
+          classyTheme,
           keymap.of([
             {
               key: 'Tab',
@@ -134,6 +134,6 @@
     max-height: calc(100vh - 5.5rem);
     min-height: 5rem;
     overflow: auto;
-    background: #1e1729;
+    background: #040421;
   }
 </style>
