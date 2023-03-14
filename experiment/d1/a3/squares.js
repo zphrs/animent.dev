@@ -1,4 +1,4 @@
-const COUNT = 10
+const COUNT = 10 // Try EDITING ME!!!
 
 const canvas = document.getElementById('c')
 /** @type {CanvasRenderingContext2D} */
