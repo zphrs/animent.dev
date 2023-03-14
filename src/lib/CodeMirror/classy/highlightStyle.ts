@@ -12,7 +12,7 @@ const highlightStyleArray = [
   { tag: t.comment, color: cd.sea500 },
   { tag: t.string, color: cd.gold700 },
   { tag: t.number, color: cd.gold500 },
-  { tag: t.bool, color: cd.sea700 },
+  { tag: t.bool, color: cd.gold500 },
   { tag: t.regexp, color: cd.gold900 },
   { tag: t.bracket, color: cd.gray900 },
   { tag: t.name, color: cd.violet700 },
