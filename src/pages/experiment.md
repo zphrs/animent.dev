@@ -119,14 +119,19 @@ objects.
 
 Vectors are used constantly in video games and other art to define motion for
 characters including rotation, position, and change in motion over time,
-[raytracing](https://youtu.be/frLwRLS_ZR0) to simulate realilistic lighting,
+[raytracing](https://youtu.be/frLwRLS_ZR0) to simulate realistic lighting,
 particle simulations, fancy graphics, anything involving graphics, and more!
 
-> note Note
+> note Additional (longer) Resources!
 >
 > A deeper dive into vectors specifically applied to video game design!
 >
 > [Vectors & Dot Product • Math for Game Devs [Part 1]](https://youtu.be/MOYiVLEnhrw)
+>
+> Also A [deeper dive into raytracing](https://youtu.be/gsZiJeaMO48) specifically
+> for real time rendering meaning all the calculations must happen every 16-4
+> milliseconds (that's 1/1000 of a second!). I strongly recommend watching the
+> first video before watching the second video on ray tracing.
 
 Here's an example which shows how to represent motion using vectors:
 <Previewer root="/experiment/d3/l1/motion.html" paths={["/experiment/d3/l1/motion.js"]} />
