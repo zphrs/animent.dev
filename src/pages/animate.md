@@ -66,9 +66,9 @@ Elements can have attributes as well:
 <img src="puppy.png" alt="a happy puppy" />
 ```
 
-> tip
+> ask
 >
-> Write the above `<img />` tag on a whiteboard or on a piece of paper and label the `tag name`, the two `attribute names`, and the two `attribute values`.
+> Write the above `<img />` tag on a whiteboard or on a piece of paper. Can you label the tag name, the two attribute names, and the two attribute values?
 >
 > <details>
 > <summary>Answer</summary>

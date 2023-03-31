@@ -75,6 +75,7 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-ol {
+ol,
+ul {
   font-size: 1.15rem;
 }

@@ -300,7 +300,7 @@
 
 {#await Promise.all([tabsPromise, CodeMirror])}
   <div class="parent">
-    <div class="message">Loading...</div>
+    <div class="message loading">&nbsp</div>
   </div>
 {:then _}
   <div class="parent" class:deselected={selected === undefined}>
@@ -378,6 +378,51 @@
     gap: 0.5rem;
     justify-content: center;
     overflow: hidden;
+  }
+
+  .message.loading {
+    height: 2.5rem;
+    position: relative;
+  }
+
+  .message.loading::before {
+    content: '';
+    position: absolute;
+    background-color: hsl(var(--hue), 100%, 30%);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+  }
+
+  .message.loading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 2px;
+    background-color: hsl(var(--hue), 50%, 80%);
+    animation: slide 1s infinite;
+  }
+
+  @keyframes slide {
+    0% {
+      left: -30%;
+      width: 30%;
+      animation-timing-function: linear;
+    }
+
+    40% {
+      left: 25%;
+      width: 75%;
+      animation-timing-function: ease-out;
+    }
+
+    100% {
+      left: 140%;
+      width: 40%;
+    }
   }
 
   .message .filename {
