@@ -22,6 +22,7 @@
   import { classyTheme } from './CodeMirror'
   import Arrow from './Arrow.svelte'
   import type { Extension } from '@codemirror/state'
+  import { svelte } from '@replit/codemirror-lang-svelte'
   export let doc = ''
   import {
     expandAbbreviation,
@@ -40,6 +41,8 @@
     langExt = html()
   } else if (lang == 'css') {
     langExt = css()
+  } else if ((lang = 'svelte')) {
+    langExt = svelte()
   }
 
   $: {

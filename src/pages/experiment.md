@@ -9,10 +9,6 @@ color: orange
 
 # Experiment
 
-> warn Warning!
->
-> This section is not complete yet. It will likely be completed around the end of February.
-
 ## Day 1: Review + intro to JS
 
 ### Activity 1: Review HTML + CSS (15 mins)
@@ -22,7 +18,7 @@ Edit the HTML files below to do two things:
 1. Make it look better with different fonts, colors (especially the `background-color` and the link `color`), along with any other CSS you like.
 2. Replace the joke with your own! Feel free to add in images or other HTML elements if you'd like.
 
-<Previewer root="/experiment/d1/a1/index.html" paths={["/experiment/d1/a1/punchline.html"]} />
+<Previewer root="/experiment/d1/a1/index.html" paths={["./d1/a1/punchline.html"]} />
 
 ### Activity 2: Hello World with JS (5 mins)
 
@@ -412,9 +408,10 @@ Make a collision detection function that checks if the player is touching the ca
 > How can you tell when two rectangles intersect?
 > Try drawing this out on paper first!
 
-> try
+> try Try
 >
-> Try making an end screen rather than just making the game end.
+> Try making an end screen rather than just making the game stop running, complete
+> with showing your total score and maybe even your high score!
 
 ## Day 5: Your Turn!
 

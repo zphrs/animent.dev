@@ -100,6 +100,7 @@
   li {
     list-style: none;
     position: relative;
+    font: inherit;
     margin: 0;
     padding: 0;
     --secondary: var(--hue), 100%, 50%;

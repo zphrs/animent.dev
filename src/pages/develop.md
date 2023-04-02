@@ -3,6 +3,10 @@ title: Develop
 color: purple
 ---
 
+<script>
+  import Previewer from "$lib/Previewer.svelte"
+</script>
+
 # Develop
 
 > warn Warning!
@@ -19,32 +23,49 @@ Example: [https://posts.zphyrj.repl.co](https://posts.zphyrj.repl.co)
 
 ### Lesson 1: Svelte Hello World
 
-TODO: Cover components, props, and file structure
+Go through part 1 on [learn.svelte.dev](https://learn.svelte.dev)
+
+> tip You learn better by typing everything out!
+>
+> While the solve button will autosolve the tutorial, I strongly recommend actually
+> typing out the tutorial and trying to complete each step yourself!
 
 ## Day 2: Svelte
 
 ### Lesson 1: Setup
 
-Cover how to make a project in an IDE (either replit or VS Code)
+On replit open the [Svelte template](https://replit.com/@replit/Svelte?v=1)!
 
 ### Activity 1: Recreate day 1's activity using Svelte
 
-TODO: example code
+> tip
+>
+> Make sure to refer to the
+> [Svelte documentation](https://svelte.dev/docs#template-syntax)
+> for help, just like how you looked at the P5.js documentation for the
+> [Experiment](./experiment) level.
 
 ## Day 3: NodeJS
 
 ### Activity 1: NodeJS + Replit DB Post Server
 
-TODO: Make a basic NodeJS posts POST/GET interface with replit's database to create a server to store comments. Take in a name and a comment from user, return json of all posts.
+### Activity 2: Svelte + Fetch
 
-Example of using replit db + NodeJS:
-https://replit.com/@EricPedley1/form-submit-to-db-example#index.js
+#### Fetch
 
-TODO: Make a version of the above that is specifically for storing comments to a website blog.
+The [`fetch` javascript function](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) lets us get data from our other website and insert it into
+our own website. Here's how to use it to fetch from my example server:
 
-### Activity 2: React + Fetch
+```js
+posts = await (await fetch(postsURL)).json()
+```
 
-TODO: Interface with NodeJS backend using a new Svelte app (students can copy and paste from old project).
+The await keyboard tells the browser to wait for the server to get back to us before
+continuing with setting the posts value to what the server said the list of posts
+is currently.
+
+Here's an [example replit](https://replit.com/@zphyrj1/Posts). Don't look at my
+code until you've looked at the Svelte documentation and asked a friend!
 
 ## Day 4: Brainstorm App (collaborative)
 
@@ -56,13 +77,13 @@ Make a new Svelte project and list out ideas in README.md
 >
 > Make sure to limit the scope of the project to something that can be done in one hour!
 
-TODO: List out example project ideas + demos
+Here's some example ideas!
 
 ### Activity 2: Design Frontend (25 mins)
 
 Use the fileName.draw feature on Replit to design the website within the project created for Activity 1.
 
-TODO: make example
+![A sketch of the design for the Posts app](./d4/wireframe.png)
 
 ### Activity 3: Design backend (25 mins)
 
