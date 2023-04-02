@@ -159,7 +159,7 @@ There are a few different selectors when it comes to css:
 
 You can either put css inline with a `<style>` HTML element, put CSS for a single element in the `style=` HTML attribute, or put CSS in a separate file with the `.css` file extension.
 
-There are even more selectors than the ones above, some of which we will cover in <a href="../develop" rel="external" data-color='purple' class='accent-color'>Level 3</a>!
+There are even more selectors than the ones above, some of which we will cover in <a href="../develop/" rel="external" data-color='purple' class='accent-color'>Level 3</a>!
 
 > tip
 >
@@ -243,7 +243,7 @@ Make a logo using basic shapes, css, and text.
 > </svg>
 > ```
 >
-> Otherwise the browser will show something like this: ![Text which reads, This XML file does not appear to have any style information associated with it. The document tree is shown below.](./animate/d2/forgot-xmlns.png)
+> Otherwise the browser will show something like this: ![Text which reads, This XML file does not appear to have any style information associated with it. The document tree is shown below.](./d2/forgot-xmlns.png)
 
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 <circle cx="50" cy="50" r="50"></circle>
@@ -294,7 +294,7 @@ You can also use CSS transforms to rotate the text and more!
 
 ```
 
-![Graphic design is my passion](./animate/d2/a1/logo.svg)
+![Graphic design is my passion](./d2/a1/logo.svg)
 
 <Previewer root="/animate/d2/a1/logo.svg" paths={["/animate/d2/a1/logo.svg"]} ></Previewer>
 
@@ -403,7 +403,7 @@ Start with this template:
 </svg>
 ```
 
-![bouncing svg](./animate/d4/a1/bounce.svg)
+![bouncing svg](./d4/a1/bounce.svg)
 <Previewer root="/animate/d4/a1/bounce.svg" paths={["/animate/d4/a1/bounce.svg"]} ></Previewer>
 
 ### Activity 2: Animate Multiple Shapes (10 mins)

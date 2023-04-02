@@ -43,11 +43,13 @@ On replit open the [Svelte template](https://replit.com/@replit/Svelte?v=1)!
 > Make sure to refer to the
 > [Svelte documentation](https://svelte.dev/docs#template-syntax)
 > for help, just like how you looked at the P5.js documentation for the
-> [Experiment](./experiment) level.
+> [Experiment](../experiment/) level.
 
 ## Day 3: NodeJS
 
-### Activity 1: NodeJS + Replit DB Post Server
+### Activity 1: Svelte + Replit DB Post Server
+
+[Preview](https://posts.zphyrj1.repl.co/) [Svelte App](https://replit.com/@zphyrj1/post-server) [Replit Post Server](https://replit.com/@zphyrj1/Posts)
 
 ### Activity 2: Svelte + Fetch
 
@@ -81,22 +83,19 @@ Here's some example ideas!
 
 ### Activity 2: Design Frontend (25 mins)
 
-Use the fileName.draw feature on Replit to design the website within the project created for Activity 1.
+Use the `fileName.draw` feature on Replit to design the website within the project created for Activity 1. [Replit Link](https://replit.com/@zphyrj1/Posts#design.draw)
 
-![A sketch of the design for the Posts app](./d4/wireframe.png)
+![A sketch of the design for the Posts app](./d4/a2/wireframe.png) 
 
 ### Activity 3: Design backend (25 mins)
 
 Make a new node.js project
 
-Use a README.md to design the API for the server
-
-TODO: make example
+Make a README.md file and use it to design the API for the server.
+[Replit Link](https://replit.com/@zphyrj1/post-server#README.md)
 
 ## Day 5: Program App
 
 ### Activity 1: Program App (60 mins)
 
-Use the designs from yesterday and actually code them up.
-
-TODO: make example
+Use the designs you made yesterday and actually code them up.

@@ -18,7 +18,7 @@ Edit the HTML files below to do two things:
 1. Make it look better with different fonts, colors (especially the `background-color` and the link `color`), along with any other CSS you like.
 2. Replace the joke with your own! Feel free to add in images or other HTML elements if you'd like.
 
-<Previewer root="/experiment/d1/a1/index.html" paths={["./d1/a1/punchline.html"]} />
+<Previewer root="/experiment/d1/a1/index.html" paths={["/experiment/d1/a1/punchline.html"]} />
 
 ### Activity 2: Hello World with JS (5 mins)
 
@@ -364,8 +364,9 @@ class Dot {
 
 ### Activity 1: Dinosaur Game Clone (60 mins)
 
-This activity is difficult! I want you to try each class on your own for 5 minutes.
-I'll go over the Player class 5 minutes into the class.
+This activity is challenging! I want you to try each class on your own for 5 minutes.
+I'll start doing a code along in 5 minutes. If you feel confident feel free to 
+ignore the code along and just get to coding yourself!
 
 #### Player Class
 
