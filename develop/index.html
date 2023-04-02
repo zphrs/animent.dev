@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" />
+    <!-- content="child-src 'self' data:; default-src 'self'; font-src 'self' fonts.gstatic.com; img-src 'self'; script-src 'unsafe-inline' 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com"  -->
+    <link
+      rel="icon"
+      href="/animent.dev/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Fira+Code:wght@500&family=Rubik:wght@500&display=swap"
+      rel="stylesheet" />
+    <style>
+      /* reset from https://www.joshwcomeau.com/css/custom-css-reset/*/
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      /*
+  2. Remove default margin
+*/
+      * {
+        margin: 0;
+      }
+
+      /*
+  3. Allow percentage-based heights in the application
+*/
+      html {
+        height: 100%;
+      }
+
+      body {
+        min-height: 100%;
+      }
+
+      /*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /*
+  6. Improve media defaults
+*/
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      /*
+  7. Remove built-in form typography styles
+*/
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      /*
+  8. Avoid text overflows
+*/
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+
+      /*
+  9. Create a root stacking context
+*/
+      #root,
+      #__next {
+        isolation: isolate;
+      }
+    </style>
+    <meta http-equiv="content-security-policy" content="">
+		<link href="/animent.dev/_app/immutable/assets/_layout-c6312d17.css" rel="stylesheet">
+		<link href="/animent.dev/_app/immutable/assets/global-845b872f.css" rel="stylesheet">
+		<link href="/animent.dev/_app/immutable/assets/_page-0d163b6c.css" rel="stylesheet">
+		<link href="/animent.dev/_app/immutable/assets/Previewer-f6534c6b.css" rel="stylesheet">
+		<link href="/animent.dev/_app/immutable/assets/CodeMirror-05336507.css" rel="stylesheet">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/start-5e42cd2d.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/chunks/index-dedda207.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/chunks/singletons-0a7408dd.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/chunks/index-423dbe77.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/chunks/paths-b4419565.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/components/pages/_layout.svelte-6c08a816.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/chunks/navPaths-4d2501b1.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/chunks/stores-f6a321b6.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/modules/pages/_layout.ts-5612100c.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/chunks/_layout-79cb23d1.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/components/pages/_slug_/_page.svelte-b469c8cd.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/chunks/index-98d61774.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/modules/pages/_slug_/_page.ts-b4428d6b.js">
+		<link rel="modulepreload" href="/animent.dev/_app/immutable/chunks/_page-3c8840f3.js"><title>Develop</title><!-- HEAD_svelte-1258swp_START --><!-- HEAD_svelte-1258swp_END -->
+  </head>
+
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+
+
+<nav data-color="purple" style="transform: translateY(0px)" class="svelte-1k8vqwh"><a href="/animent.dev/animate/" class="chip svelte-1k8vqwh" data-color="green">Animate</a><a href="/animent.dev/experiment/" class="chip svelte-1k8vqwh" data-color="orange">Experiment</a><a href="/animent.dev/" class="chip svelte-1k8vqwh active" data-color="purple">Develop</a>
+</nav>
+<main>
+<div data-color="purple">
+
+<aside>
+  <div class="disable svelte-rwyh0m collapsed"></div>
+  <div class="side svelte-rwyh0m collapsed mobile" style="--width: 250px"><button class="svelte-rwyh0m"><i class="svelte-rwyh0m"><svg class="app-switcher-button-icon svelte-rwyh0m" version="1.1" id="Layer_1" x="0" y="0" width="100%" height="100%" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"></path><path fill="none" d="M0,0h24v24H0V0z"></path></svg></i></button>
+    
+    <div><span slot="main" class="table-of-contents svelte-3610lv"><div class="parent svelte-l0ib4s"><h2 class="svelte-l0ib4s">Develop</h2>
+  <ul class="svelte-l0ib4s">
+
+<li data-level="2" style="--progress: NaN%" class="svelte-i42ryn"><a href="#review-javascript-intro-to-svelte" class="svelte-i42ryn">Day 1: Review JavaScript/Intro to Svelte
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-i42ryn"><a href="#todo-app-code-along" class="svelte-i42ryn">Activity 1: Todo App (Code along)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-i42ryn"><a href="#svelte-hello-world" class="svelte-i42ryn">Lesson 1: Svelte Hello World
+      </a>
+</li>
+
+<li data-level="2" style="--progress: NaN%" class="svelte-i42ryn"><a href="#svelte" class="svelte-i42ryn">Day 2: Svelte
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-i42ryn"><a href="#setup" class="svelte-i42ryn">Lesson 1: Setup
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-i42ryn"><a href="#recreate-day-1s-activity-using-svelte" class="svelte-i42ryn">Activity 1: Recreate day 1’s activity using Svelte
+      </a>
+</li>
+
+<li data-level="2" style="--progress: NaN%" class="svelte-i42ryn"><a href="#nodejs" class="svelte-i42ryn">Day 3: NodeJS
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-i42ryn"><a href="#svelte-replit-db-post-server" class="svelte-i42ryn">Activity 1: Svelte + Replit DB Post Server
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-i42ryn"><a href="#svelte-fetch" class="svelte-i42ryn">Activity 2: Svelte + Fetch
+      </a>
+</li>
+
+<li data-level="4" style="--progress: NaN%" class="svelte-i42ryn"><a href="#fetch" class="svelte-i42ryn">Fetch
+      </a>
+</li>
+
+<li data-level="2" style="--progress: NaN%" class="svelte-i42ryn"><a href="#brainstorm-app-collaborative" class="svelte-i42ryn">Day 4: Brainstorm App (collaborative)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-i42ryn"><a href="#brainstorm-app-10-mins" class="svelte-i42ryn">Activity 1: Brainstorm App (10 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-i42ryn"><a href="#design-frontend-25-mins" class="svelte-i42ryn">Activity 2: Design Frontend (25 mins)
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-i42ryn"><a href="#design-backend-25-mins" class="svelte-i42ryn">Activity 3: Design backend (25 mins)
+      </a>
+</li>
+
+<li data-level="2" style="--progress: NaN%" class="svelte-i42ryn"><a href="#program-app" class="svelte-i42ryn">Day 5: Program App
+      </a>
+</li>
+
+<li data-level="3" style="--progress: NaN%" class="svelte-i42ryn"><a href="#program-app-60-mins" class="svelte-i42ryn">Activity 1: Program App (60 mins)
+      </a>
+</li></ul>
+</div></span></div></div>
+  
+</aside>
+    <article class="card markdown svelte-3610lv"><h1 id="develop">Develop</h1>
+<blockquote class="warn"><p style="font-weight: bold;">Warning!</p>
+<p>This section is only an outline so far. It will likely get filled out more by the end of February and completed by the end of March.</p></blockquote>
+<h2 id="review-javascript-intro-to-svelte">Day 1: Review JavaScript/Intro to Svelte</h2>
+<h3 id="todo-app-code-along">Activity 1: Todo App (Code along)</h3>
+<p>Make a text feed that a user can post to and delete from with pure javascript</p>
+<p>Example: <a href="https://posts.zphyrj.repl.co" rel="noreferrer" target="_blank">https://posts.zphyrj.repl.co</a></p>
+<h3 id="svelte-hello-world">Lesson 1: Svelte Hello World</h3>
+<p>Go through part 1 on <a href="https://learn.svelte.dev" rel="noreferrer" target="_blank">learn.svelte.dev</a></p>
+<blockquote class="tip"><p style="font-weight: bold;">You learn better by typing everything out!</p>
+<p>While the solve button will autosolve the tutorial, I strongly recommend actually
+typing out the tutorial and trying to complete each step yourself!</p></blockquote>
+<h2 id="svelte">Day 2: Svelte</h2>
+<h3 id="setup">Lesson 1: Setup</h3>
+<p>On replit open the <a href="https://replit.com/@replit/Svelte?v=1" rel="noreferrer" target="_blank">Svelte template</a>!</p>
+<h3 id="recreate-day-1s-activity-using-svelte">Activity 1: Recreate day 1’s activity using Svelte</h3>
+<blockquote class="tip"><p style="font-weight: bold;"></p>
+<p>Make sure to refer to the
+<a href="https://svelte.dev/docs#template-syntax" rel="noreferrer" target="_blank">Svelte documentation</a>
+for help, just like how you looked at the P5.js documentation for the
+<a href="../experiment/">Experiment</a> level.</p></blockquote>
+<h2 id="nodejs">Day 3: NodeJS</h2>
+<h3 id="svelte-replit-db-post-server">Activity 1: Svelte + Replit DB Post Server</h3>
+<p><a href="https://posts.zphyrj1.repl.co/" rel="noreferrer" target="_blank">Preview</a> <a href="https://replit.com/@zphyrj1/post-server" rel="noreferrer" target="_blank">Svelte App</a> <a href="https://replit.com/@zphyrj1/Posts" rel="noreferrer" target="_blank">Replit Post Server</a></p>
+<h3 id="svelte-fetch">Activity 2: Svelte + Fetch</h3>
+<h4 id="fetch">Fetch</h4>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" rel="noreferrer" target="_blank"><code>fetch</code> javascript function</a> lets us get data from our other website and insert it into
+our own website. Here’s how to use it to fetch from my example server:</p>
+<!-- HTML_TAG_START --><pre class="shiki" style="background-color: #1E1729"><code><span class="line"><span style="color: #86B6EC">posts</span><span style="color: #D4D4D4"> </span><span style="color: #ECD47C">=</span><span style="color: #D4D4D4"> </span><span style="color: #A695F2">await</span><span style="color: #D4D4D4"> (</span><span style="color: #A695F2">await</span><span style="color: #D4D4D4"> </span><span style="color: #86EC99">fetch</span><span style="color: #D4D4D4">(</span><span style="color: #86B6EC">postsURL</span><span style="color: #D4D4D4">)).</span><span style="color: #86EC99">json</span><span style="color: #D4D4D4">()</span></span></code></pre><!-- HTML_TAG_END -->
+<p>The await keyboard tells the browser to wait for the server to get back to us before
+continuing with setting the posts value to what the server said the list of posts
+is currently.</p>
+<p>Here’s an <a href="https://replit.com/@zphyrj1/Posts" rel="noreferrer" target="_blank">example replit</a>. Don’t look at my
+code until you’ve looked at the Svelte documentation and asked a friend!</p>
+<h2 id="brainstorm-app-collaborative">Day 4: Brainstorm App (collaborative)</h2>
+<h3 id="brainstorm-app-10-mins">Activity 1: Brainstorm App (10 mins)</h3>
+<p>Make a new Svelte project and list out ideas in README.md</p>
+<blockquote class="important"><p style="font-weight: bold;"></p>
+<p>Make sure to limit the scope of the project to something that can be done in one hour!</p></blockquote>
+<p>Here’s some example ideas!</p>
+<h3 id="design-frontend-25-mins">Activity 2: Design Frontend (25 mins)</h3>
+<p>Use the <code>fileName.draw</code> feature on Replit to design the website within the project created for Activity 1. <a href="https://replit.com/@zphyrj1/Posts#design.draw" rel="noreferrer" target="_blank">Replit Link</a></p>
+<p><img src="./d4/a2/wireframe.png" alt="A sketch of the design for the Posts app"></p>
+<h3 id="design-backend-25-mins">Activity 3: Design backend (25 mins)</h3>
+<p>Make a new node.js project</p>
+<p>Make a README.md file and use it to design the API for the server.
+<a href="https://replit.com/@zphyrj1/post-server#README.md" rel="noreferrer" target="_blank">Replit Link</a></p>
+<h2 id="program-app">Day 5: Program App</h2>
+<h3 id="program-app-60-mins">Activity 1: Program App (60 mins)</h3>
+<p>Use the designs you made yesterday and actually code them up.</p></article></div>
+</main>
+
+
+		<script type="module" data-sveltekit-hydrate="mmjte6">
+			import { start } from "/animent.dev/_app/immutable/start-5e42cd2d.js";
+
+			start({
+				env: {},
+				paths: {"base":"/animent.dev","assets":"/animent.dev"},
+				target: document.querySelector('[data-sveltekit-hydrate="mmjte6"]').parentNode,
+				version: "1680470329532",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+  </body>
+</html>
