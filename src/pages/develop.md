@@ -9,10 +9,6 @@ color: purple
 
 # Develop
 
-> warn Warning!
->
-> This section is only an outline so far. It will likely get filled out more by the end of February and completed by the end of March.
-
 ## Day 1: Review JavaScript/Intro to Svelte
 
 ### Activity 1: Todo App (Code along)
@@ -47,9 +43,11 @@ On replit open the [Svelte template](https://replit.com/@replit/Svelte?v=1)!
 
 ## Day 3: NodeJS
 
-### Activity 1: Svelte + Replit DB Post Server
+### Activity 1: Fastify + Replit DB Post Server
 
-[Preview](https://posts.zphyrj1.repl.co/) [Svelte App](https://replit.com/@zphyrj1/post-server) [Replit Post Server](https://replit.com/@zphyrj1/Posts)
+[Replit Post Server](https://replit.com/@zphyrj1/post-server)
+
+[Fastify Getting Started guide](https://www.fastify.io/docs/latest/Guides/Getting-Started/)
 
 ### Activity 2: Svelte + Fetch
 
@@ -69,6 +67,8 @@ is currently.
 Here's an [example replit](https://replit.com/@zphyrj1/Posts). Don't look at my
 code until you've looked at the Svelte documentation and asked a friend!
 
+[Preview](https://posts.zphyrj1.repl.co/)
+
 ## Day 4: Brainstorm App (collaborative)
 
 ### Activity 1: Brainstorm App (10 mins)
@@ -85,7 +85,7 @@ Here's some example ideas!
 
 Use the `fileName.draw` feature on Replit to design the website within the project created for Activity 1. [Replit Link](https://replit.com/@zphyrj1/Posts#design.draw)
 
-![A sketch of the design for the Posts app](./d4/a2/wireframe.png) 
+![A sketch of the design for the Posts app](./d4/a2/wireframe.png)
 
 ### Activity 3: Design backend (25 mins)
 
