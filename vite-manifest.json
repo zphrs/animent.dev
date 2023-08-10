@@ -17,7 +17,7 @@
     "src": ".svelte-kit/generated/nodes/1.js"
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-00df2ed8.js",
+    "file": "_app/immutable/chunks/2-575158e6.js",
     "imports": [
       "src/routes/+page.svelte"
     ],
@@ -25,26 +25,44 @@
     "src": ".svelte-kit/generated/nodes/2.js"
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-1da77de5.js",
+    "file": "_app/immutable/chunks/3-61040031.js",
     "imports": [
-      "__page-2e682a09.js",
+      "__page-940effd9.js",
       "src/routes/[slug]/+page.svelte"
     ],
     "isDynamicEntry": true,
     "src": ".svelte-kit/generated/nodes/3.js"
   },
+  "CodeMirror.css": {
+    "file": "_app/immutable/assets/CodeMirror-05336507.css",
+    "src": "CodeMirror.css"
+  },
   "Previewer.css": {
     "file": "_app/immutable/assets/Previewer-f6534c6b.css",
     "src": "Previewer.css"
   },
-  "_Previewer-2c408a71.js": {
+  "_CodeMirror-1a3c8fd2.js": {
+    "css": [
+      "_app/immutable/assets/CodeMirror-05336507.css"
+    ],
+    "dynamicImports": [
+      "node_modules/.pnpm/@replit+codemirror-lang-svelte@6.0.0_@codemirror+autocomplete@6.4.2_@codemirror+lang-css@6.1._tquiigz7i2o63mr3rvh2ed35vu/node_modules/@replit/codemirror-lang-svelte/dist/index.js"
+    ],
+    "file": "_app/immutable/chunks/CodeMirror-1a3c8fd2.js",
+    "imports": [
+      "_preload-helper-41c905a7.js",
+      "_index-dedda207.js"
+    ],
+    "isDynamicEntry": true
+  },
+  "_Previewer-7edd708d.js": {
     "css": [
       "_app/immutable/assets/Previewer-f6534c6b.css"
     ],
     "dynamicImports": [
-      "src/lib/CodeMirror.svelte"
+      "_CodeMirror-1a3c8fd2.js"
     ],
-    "file": "_app/immutable/chunks/Previewer-2c408a71.js",
+    "file": "_app/immutable/chunks/Previewer-7edd708d.js",
     "imports": [
       "_preload-helper-41c905a7.js",
       "_index-dedda207.js",
@@ -55,13 +73,13 @@
   "__layout-79cb23d1.js": {
     "file": "_app/immutable/chunks/_layout-79cb23d1.js"
   },
-  "__page-2e682a09.js": {
+  "__page-940effd9.js": {
     "dynamicImports": [
       "src/pages/animate.md",
       "src/pages/develop.md",
       "src/pages/experiment.md"
     ],
-    "file": "_app/immutable/chunks/_page-2e682a09.js",
+    "file": "_app/immutable/chunks/_page-940effd9.js",
     "imports": [
       "_preload-helper-41c905a7.js"
     ]
@@ -110,14 +128,22 @@
     "file": "_app/immutable/assets/global-845b872f.css",
     "src": "global.css"
   },
-  "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.1+vite@4.1.4/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+  "node_modules/.pnpm/@replit+codemirror-lang-svelte@6.0.0_@codemirror+autocomplete@6.4.2_@codemirror+lang-css@6.1._tquiigz7i2o63mr3rvh2ed35vu/node_modules/@replit/codemirror-lang-svelte/dist/index.js": {
+    "file": "_app/immutable/chunks/index-f1b34dbd.js",
+    "imports": [
+      "_CodeMirror-1a3c8fd2.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/.pnpm/@replit+codemirror-lang-svelte@6.0.0_@codemirror+autocomplete@6.4.2_@codemirror+lang-css@6.1._tquiigz7i2o63mr3rvh2ed35vu/node_modules/@replit/codemirror-lang-svelte/dist/index.js"
+  },
+  "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.1_vite@4.1.4/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
       ".svelte-kit/generated/nodes/1.js",
       ".svelte-kit/generated/nodes/2.js",
       ".svelte-kit/generated/nodes/3.js"
     ],
-    "file": "_app/immutable/start-aa021cbf.js",
+    "file": "_app/immutable/start-58130af6.js",
     "imports": [
       "_index-dedda207.js",
       "_singletons-0a7408dd.js",
@@ -125,28 +151,13 @@
       "_paths-b4419565.js"
     ],
     "isEntry": true,
-    "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.1+vite@4.1.4/node_modules/@sveltejs/kit/src/runtime/client/start.js"
-  },
-  "src/lib/CodeMirror.css": {
-    "file": "_app/immutable/assets/CodeMirror-05336507.css",
-    "src": "src/lib/CodeMirror.css"
-  },
-  "src/lib/CodeMirror.svelte": {
-    "css": [
-      "_app/immutable/assets/CodeMirror-05336507.css"
-    ],
-    "file": "_app/immutable/chunks/CodeMirror-2e2b95a7.js",
-    "imports": [
-      "_index-dedda207.js"
-    ],
-    "isDynamicEntry": true,
-    "src": "src/lib/CodeMirror.svelte"
+    "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.1_vite@4.1.4/node_modules/@sveltejs/kit/src/runtime/client/start.js"
   },
   "src/pages/animate.md": {
-    "file": "_app/immutable/chunks/animate-610b65b0.js",
+    "file": "_app/immutable/chunks/animate-7b1ad029.js",
     "imports": [
       "_index-dedda207.js",
-      "_Previewer-2c408a71.js"
+      "_Previewer-7edd708d.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/animate.md"
@@ -164,10 +175,10 @@
     "src": "src/pages/develop.md"
   },
   "src/pages/experiment.md": {
-    "file": "_app/immutable/chunks/experiment-c4d64bc8.js",
+    "file": "_app/immutable/chunks/experiment-5a7c9c90.js",
     "imports": [
       "_index-dedda207.js",
-      "_Previewer-2c408a71.js"
+      "_Previewer-7edd708d.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/experiment.md"
@@ -225,7 +236,7 @@
     "css": [
       "_app/immutable/assets/_page-1e739f7f.css"
     ],
-    "file": "_app/immutable/components/pages/_page.svelte-cc3fd0c0.js",
+    "file": "_app/immutable/components/pages/_page.svelte-673138f2.js",
     "imports": [
       "_index-dedda207.js",
       "_index-98d61774.js",
@@ -255,10 +266,10 @@
     "src": "src/routes/[slug]/+page.svelte"
   },
   "src/routes/[slug]/+page.ts": {
-    "file": "_app/immutable/modules/pages/_slug_/_page.ts-37ba5b33.js",
+    "file": "_app/immutable/modules/pages/_slug_/_page.ts-af387e64.js",
     "imports": [
       "_preload-helper-41c905a7.js",
-      "__page-2e682a09.js"
+      "__page-940effd9.js"
     ],
     "isEntry": true,
     "src": "src/routes/[slug]/+page.ts"
