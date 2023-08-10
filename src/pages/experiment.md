@@ -76,7 +76,7 @@ Here's a fancy animation! Ooooohhhh aaaaaaaa
 <Previewer root="/experiment/d2/a2/fancy.html" paths={["/experiment/d2/a2/fancy.js"]} />
 
 See if you can make a better animation! Remember to use
-[replit.com](https://replit.com)'s
+[replit's](https://replit.com)
 [p5.js template](https://replit.com/@replit/p5js?v=1)!
 
 ### Activity 3: P5.js interactivity (30 mins)
@@ -365,7 +365,7 @@ class Dot {
 ### Activity 1: Dinosaur Game Clone (60 mins)
 
 This activity is challenging! I want you to try each class on your own for 5 minutes.
-I'll start doing a code along in 5 minutes. If you feel confident feel free to 
+I'll start doing a code along in 5 minutes. If you feel confident feel free to
 ignore the code along and just get to coding yourself!
 
 #### Player Class

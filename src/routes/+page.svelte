@@ -29,22 +29,22 @@
         >&shy;.<span data-color="purple">dev</span>
       </h1>
       <h2>
-        <a href={`${base}/animate`} data-color="green">Animate</a>,
-        <a href={`${base}/experiment`} data-color="orange"
+        <a href={`${base}/animate/`} data-color="green">Animate</a>,
+        <a href={`${base}/experiment/`} data-color="orange"
           >Experiment</a
         >,
-        <a href={`${base}/develop`} data-color="purple">Develop</a>:
+        <a href={`${base}/develop/`} data-color="purple">Develop</a>:
         Learn web development in three stages
       </h2>
     </div>
-    <a href={`${base}/animate`} class="card" data-color="green">
+    <a href={`${base}/animate/`} class="card" data-color="green">
       <h3>Level 1: Animate</h3>
       <p>
         Hand code SVG images, and then animate those images to create
         stunning animations.
       </p>
     </a>
-    <a href={`${base}/experiment`} class="card" data-color="orange">
+    <a href={`${base}/experiment/`} class="card" data-color="orange">
       <h3>Level 2: Experiment</h3>
       <p>
         Use JavaScript with HTML and CSS to create an engaging and
@@ -52,7 +52,7 @@
       </p>
     </a>
     <a
-      href={`${base}/develop`}
+      href={`${base}/develop/`}
       class="develop card"
       data-color="purple">
       <h3>Level 3: Develop</h3>
@@ -66,13 +66,16 @@
   <div class="about card">
     <h2>About</h2>
     <p>
-      This site was made to teach web design. For each level there is
-      editable example code. You can edit the example code and see a
-      preview of the page with your edits, but any edits you make will
-      disappear once you refresh the page. If you want to save your
-      changes I recommend copying and pasting your edits into <a
-        href="https://replit.com">replit.com</a
-      >, Visual Studio Code, or a different text editor.
+      This site was made in collaboration with <a
+        href="https://codeforfun.com">Code For Fun</a>
+      to teach web design. For each level there is editable example
+      code. You can edit the example code and see a preview of the
+      page with your edits, but any edits you make will disappear once
+      you refresh the page. If you want to save your changes I
+      recommend copying and pasting your edits into
+      <a href="https://replit.com">replit.com</a>,
+      <a href="https://code.visualstudio.com/">Visual Studio Code</a>,
+      or a different text editor.
     </p>
   </div>
 </div>
