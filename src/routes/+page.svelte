@@ -57,7 +57,7 @@
       data-color="purple">
       <h3>Level 3: Develop</h3>
       <p>
-        Develop complete applications with the React framework,
+        Develop complete applications with the Svelte framework,
         complete with a NodeJS backend.
       </p>
     </a>
@@ -68,11 +68,11 @@
     <p>
       This site was made in collaboration with <a
         href="https://codeforfun.com">Code For Fun</a>
-      to teach web design. For each level there is editable example
-      code. You can edit the example code and see a preview of the
-      page with your edits, but any edits you make will disappear once
-      you refresh the page. If you want to save your changes I
-      recommend copying and pasting your edits into
+      to teach web design. For each level there is editable example code.
+      You can edit the example code and see a preview of the page with
+      your edits, but any edits you make will disappear once you refresh
+      the page. If you want to save your changes I recommend copying and
+      pasting your edits into
       <a href="https://replit.com">replit.com</a>,
       <a href="https://code.visualstudio.com/">Visual Studio Code</a>,
       or a different text editor.
