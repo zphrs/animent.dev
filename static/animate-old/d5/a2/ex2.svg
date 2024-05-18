@@ -1,0 +1,77 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect id="three" width="25" height="50" x="63" y="25" />
+    <rect id="zero" width="25" height="50" x="16" y="25" />
+    <rect id="one" width="25" height="50" x="5" y="25" />
+    <rect id="two" width="25" height="50" x="37.5" y="25" />
+
+    <style>
+        #zero {
+            fill: black;
+            animation: zero 1s infinite;
+            transform-origin: 5% 50%;
+            transform: scale(0);
+        }
+
+        #one {
+            fill: black;
+            animation: one 1s infinite;
+            transform-origin: center;
+            transform: scale(0.8);
+        }
+
+        #two {
+            fill: black;
+            animation: two 1s infinite;
+            transform-origin: center;
+        }
+
+        #three {
+            fill: black;
+            animation: three 1s infinite;
+            transform-origin: 75% 50%;
+            transform: scale(0.8);
+        }
+
+        @keyframes zero {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(0.8);
+            }
+        }
+
+        @keyframes one {
+            0% {
+                transform: scale(0.8);
+            }
+
+            100% {
+                transform: scale(1);
+                x: 37.5;
+            }
+        }
+
+        @keyframes two {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0.8);
+                x: 70;
+            }
+        }
+
+        @keyframes three {
+            0% {
+                transform: scale(0.8);
+            }
+
+            100% {
+                transform: scale(0.5);
+            }
+        }
+    </style>
+</svg>

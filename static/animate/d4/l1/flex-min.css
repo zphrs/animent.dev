@@ -1,0 +1,8 @@
+/* makes paragraphs not get smaller than 100px before wrapping*/
+.flex.min-100 p {
+  min-width: 100px;
+}
+
+.flex.min-250 p {
+  min-width: 250px;
+}

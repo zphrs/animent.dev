@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Flex</title>
+    <link rel="stylesheet" href="./flex.css" />
+    <link rel="stylesheet" href="./flex-evenly.css" />
+    <link rel="stylesheet" href="./flex-min.css" />
+    <link rel="stylesheet" href="./flex-wrap.css" />
+  </head>
+  <body>
+    <h1>Flex Examples</h1>
+    <h2>No Flex</h2>
+    <div class="grabbable">
+      <p>
+        Try resizing the green rectangle by dragging the
+        bottom right corner to the left.
+      </p>
+      <p>
+        These three sections are stacked instead of side by
+        side.
+      </p>
+      <p>No fair! I'm on the bottom!</p>
+    </div>
+    <h2>Default Flex</h2>
+    <div class="flex grabbable">
+      <p>
+        Try resizing the green rectangle by dragging the
+        bottom right corner to the left.
+      </p>
+      <p>
+        You'll notice that the three sections will resize,
+        with each one taking up more of the width based on
+        how much text is in each box.
+      </p>
+      <p>No fair! I'm so small!</p>
+    </div>
+    <br />
+    <h2>Each box will be evenly sized</h2>
+    <div class="flex grabbable divy-evenly">
+      <p>
+        Try resizing the long green rectangle by dragging
+        the bottom right corner to the left.
+      </p>
+      <p>
+        You'll notice that now the three sections will all
+        be the same size, regardless of how much text is in
+        each box.
+      </p>
+      <p>
+        That's much better! Although if you make us too
+        small then you have to scroll left and right :(
+      </p>
+    </div>
+    <h2>
+      Each box will be evenly sized and wrap if too narrow
+    </h2>
+    <div class="flex grabbable divy-evenly wrap">
+      <p>
+        Try resizing the long green rectangle by dragging
+        the bottom right corner to the left.
+      </p>
+      <p>
+        You'll notice that now the three sections will be
+        the same size and will wrap to the next line if they
+        don't fit.
+      </p>
+      <p>
+        Yay! No more scrollbar. Although the text still gets
+        really narrow and hard to read before it wraps.
+      </p>
+    </div>
+    <h2>
+      Each box will be evenly sized and wrap if any box
+      would be less than 100px wide without wrapping.
+    </h2>
+    <div class="flex grabbable divy-evenly wrap min-100">
+      <p>
+        Try resizing the long green rectangle by dragging
+        the bottom right corner to the left.
+      </p>
+      <p>
+        You'll notice that now the three sections will be
+        the same size and will wrap to the next line if they
+        don't fit.
+      </p>
+      <p>
+        Yay! Now the text doesn't get too narrow before it
+        wraps.
+      </p>
+    </div>
+    <h2>Carousel with Horizontal Scroll Snapping</h2>
+    <div class="flex grabbable divy-evenly min-250 snap-x">
+      <p>
+        Try resizing the long green rectangle by dragging
+        the bottom right corner to the left.
+      </p>
+      <p>
+        You'll notice that now the three sections will be
+        the same size and will stay a minimum of 200px wide.
+        If there is not enough space inside the parent div,
+        then a horizontal scrollbar will appear.
+      </p>
+      <p>Yay! Now I'm in a carousel!</p>
+    </div>
+  </body>
+</html>

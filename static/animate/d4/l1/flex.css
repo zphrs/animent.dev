@@ -1,0 +1,41 @@
+.flex {
+  /* applies flex styling */
+  display: flex;
+  /* makes child elements space 1rem apart */
+  gap: 1rem;
+}
+
+.grabbable {
+  /* makes the flex boxes resizable */
+  resize: horizontal;
+  /* makes scroll bars appear if it gets too narrow from resizing */
+  overflow: auto;
+  /* adds a padding to have space between the edge of the light green box and the child paragraphs */
+  padding: 1rem;
+  /* aligns the resizable boxes in the middle */
+  margin: auto;
+  background-color: hsl(93, 100%, 45%, 0.1);
+}
+
+/* styles paragraphs */
+p {
+  /* removes default margin */
+  margin: 0;
+  background-color: hsl(93, 70%, 70%);
+  outline: 1px solid hsl(93, 100%, 20%);
+  /* adds padding so there's space between the text and the edge of the paragraph */
+  padding: 0.5rem;
+}
+
+/* changes the color of the last element inside any grabbable div */
+.grabbable p:last-child {
+  background-color: hsl(58, 70%, 70%);
+}
+
+.snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.snap-x > * {
+  scroll-snap-align: center;
+}

@@ -1,0 +1,4 @@
+/* makes elements wrap to the next line if the flex element gets too narrow */
+.flex.wrap {
+  flex-wrap: wrap;
+}

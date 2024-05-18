@@ -1,0 +1,23 @@
+.any-class-name {
+  /* for a class name put a period before, 
+  applies to elements with class="any-class-name" */
+  color: darkred;
+}
+#italicized {
+  /* for an id put a hashtag before, 
+  applies to *one* element with id="italicized" */
+  font-style: italic;
+}
+.asdf {
+  /* for any element with class="asdf" */
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* makes all header elements have blue text */
+  color: blue;
+}

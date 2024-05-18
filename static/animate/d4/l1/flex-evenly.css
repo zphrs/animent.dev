@@ -1,0 +1,4 @@
+/* makes all of the elements evenly sized */
+.flex.divy-evenly p {
+  flex: 1;
+}
